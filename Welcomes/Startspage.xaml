@@ -1,0 +1,79 @@
+﻿<Page
+    x:Class="InsTsinghua.Welcomes.Startspage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:InsTsinghua.Welcomes"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Loaded="Page_Loaded"
+    >
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!---->
+             <FlipView Name="FlipSts" Height="Auto"  Grid.RowSpan="9" Grid.ColumnSpan="3" Background="White">
+
+                <FlipViewItem>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="4*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                             <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                       
+                            <Image Source="ms-appx:Assets/OutlookView.JPG" Height="Auto"  Margin="20"></Image>
+                    
+                       
+                        <TextBlock Grid.Row="1" Height="Auto" Width="Auto" HorizontalAlignment="Center" FontSize="36" TextWrapping="Wrap" TextAlignment="Center">
+                            自动同步课程、作业
+                        </TextBlock>
+                         <TextBlock Grid.Row="2" Height="Auto" Width="Auto" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center">
+                            向右滑动, 或点击右侧向右箭头, 如希望跳过, 点击左边任意按钮即可
+                        </TextBlock>
+                    </Grid>
+                </FlipViewItem>
+
+                <FlipViewItem>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="4*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        
+                         <Grid >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                             <Image Source="ms-appx:Assets/NewsView.JPG" Grid.Column="0" Height="Auto"  Margin="3"></Image>
+                             <Image Source="ms-appx:Assets/LearnView.JPG" Grid.Column="1" Height="Auto"  Margin="3"></Image>
+                             <Image Source="ms-appx:Assets/TVView.JPG" Grid.Column="2" Height="Auto"  Margin="3"></Image>
+                        </Grid>
+                        
+                        <TextBlock Grid.Row="1" Height="Auto" Width="Auto" HorizontalAlignment="Center" FontSize="36" TextWrapping="Wrap" TextAlignment="Center">
+                            清华新闻、网络学堂、高清电视
+                        </TextBlock>
+                        
+                    </Grid>
+                </FlipViewItem>
+                <FlipViewItem>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="4*"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                       
+                        <TextBlock Grid.Row="0" Height="Auto" Width="Auto" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="56" TextWrapping="Wrap">
+                            让我们开始吧
+                        </TextBlock>
+                        <Button Grid.Row="1" Name="StartButton" Click="StartButton_Click" Content="开启这段旅程" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Top"></Button>
+                    </Grid>
+                </FlipViewItem>
+
+
+            </FlipView>
+         <!---->
+    </Grid>
+</Page>

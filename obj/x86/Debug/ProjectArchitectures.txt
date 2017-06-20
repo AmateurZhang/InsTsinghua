@@ -1,0 +1,4 @@
+D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\BackgroundTasks\BackgroundTasks.csproj;x86
+D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\ClassLibrary\ClassLibrary.csproj;x86
+D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\ClassLibrary\ClassLibrary.csproj;x86
+D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\InsTsinghua.csproj;x86
