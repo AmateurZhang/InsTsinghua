@@ -7,7 +7,7 @@
 
   有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
  -->
-  <Identity Name="39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4" Publisher="CN=thuzh" Version="1.0.5.0" ProcessorArchitecture="x86" />
+  <Identity Name="39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4" Publisher="CN=thuzh" Version="1.0.6.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>InsTsinghua</DisplayName>

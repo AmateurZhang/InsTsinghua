@@ -26,5 +26,20 @@ namespace InsTsinghua.Newss
         {
             this.InitializeComponent();
         }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if(NewsRoot.CanGoBack)
+            {
+                NewsRoot.GoBack();
+            }
+        }
+
+        private void NewsRoot_NewWindowRequested(WebView sender, WebViewNewWindowRequestedEventArgs args)
+        {
+            NewsRoot.Navigate(args.Uri);
+
+            args.Handled = true;
+        }
     }
 }

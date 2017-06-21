@@ -9,6 +9,18 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock Text="Loading...."></TextBlock>
-        <WebView Name="NewsRoot" Source="http://news.tsinghua.edu.cn/publish/thunews/index.html" Canvas.ZIndex="100"></WebView>
+        <WebView Name="NewsRoot" Source="http://news.tsinghua.edu.cn/publish/thunews/index.html" Canvas.ZIndex="100" NewWindowRequested="NewsRoot_NewWindowRequested"></WebView>
+        <Button 
+                    Name="BackButton" 
+                     FontFamily="Segoe MDL2 Assets"
+                    FontSize="24"
+                    Content ="&#xE0C4;"
+                    Click="BackButton_Click" 
+                    VerticalAlignment="Top"
+                        HorizontalAlignment="Right"
+                   Opacity="0.6"
+                    Foreground="white"
+                        Background="Purple" Canvas.ZIndex="120"
+                      />
     </Grid>
 </Page>

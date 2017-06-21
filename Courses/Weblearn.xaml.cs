@@ -8,6 +8,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -75,6 +76,7 @@ namespace InsTsinghua.Courses
                 await msg.ShowAsync();
 
             }
+
         }
 
         private async void Coursebuttons_Click(object sender, RoutedEventArgs e)
@@ -126,7 +128,18 @@ namespace InsTsinghua.Courses
                 MessageDialog a = new MessageDialog("Wrong data add to list");
                 await a.ShowAsync();
             }
+
+            
             PR0.IsActive = false;
+            try
+            {
+                GetStart();
+                Debug.WriteLine("[磁贴更新] ok");
+            }
+            catch
+            {
+                Debug.WriteLine("[磁贴更新] failed");
+            }
         }
         private async void CourseGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
@@ -212,6 +225,54 @@ namespace InsTsinghua.Courses
             catch
             {
             }
+        }
+        private async void GetStart()
+        {
+          
+                if (DataAccess.supposedToWorkAnonymously())
+                {
+
+                    try
+                    {
+                        await Notification.update(calendarOnly: true);
+                        // await Appointment.updateCalendar();
+                    }
+                    catch
+                    {
+                    }
+                }
+                else if (!DataAccess.supposedToWorkAnonymously()
+                   && DataAccess.credentialAbsent())
+                {
+                try
+                {
+                    await Notification.update(calendarOnly: true);
+                    // await Appointment.updateCalendar();
+                }
+                catch
+                {
+                }
+
+            }
+                else if (!DataAccess.credentialAbsent())
+                {
+                try
+                {
+                    await Notification.update(true);
+                    // await Appointment.updateDeadlines();
+                }
+                catch (Exception e)
+                {
+                    // this.errorUpdate.Visibility = Visibility.Visible;
+                    try
+                    {
+                        await Notification.update();
+                    }
+                    catch (Exception) { }
+                }
+            }
+               
+            
         }
     }
 }

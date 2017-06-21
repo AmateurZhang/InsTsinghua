@@ -87,7 +87,7 @@ namespace InsTsinghua.Logins
             }
         }
 
-        private async void update_without_credential()
+        public async void update_without_credential()
         {
             try
             {
@@ -212,6 +212,6 @@ namespace InsTsinghua.Logins
             GetDataFromLearn();
         }
 
-        
+       
     }
 }

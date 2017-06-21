@@ -162,27 +162,29 @@ namespace InsTsinghua
             }
            
          }
-         /*
-         private void Webview_NewWindowRequested(WebView sender, WebViewNewWindowRequestedEventArgs e)
-         {
 
-             Webview.Navigate(e.Uri);
+       
+        /*
+private void Webview_NewWindowRequested(WebView sender, WebViewNewWindowRequestedEventArgs e)
+{
 
-             e.Handled = true;
+   Webview.Navigate(e.Uri);
 
-         }
+   e.Handled = true;
 
-         private void BackButton_Click(object sender, RoutedEventArgs e)
-         {
-             if (News.IsSelected && Webview.CanGoBack && Webview.Source != new Uri("http://news.tsinghua.edu.cn/publish/thunews/index.html"))
-             {
-                 Webview.GoBack();
+}
 
-             }
+private void BackButton_Click(object sender, RoutedEventArgs e)
+{
+   if (News.IsSelected && Webview.CanGoBack && Webview.Source != new Uri("http://news.tsinghua.edu.cn/publish/thunews/index.html"))
+   {
+       Webview.GoBack();
+
+   }
 
 
-         }
-     */
+}
+*/
 
 
     }

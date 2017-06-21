@@ -1,4 +1,6 @@
-﻿using System;
+﻿using ClassLibrary;
+using InsTsinghua.Logins;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,6 +9,7 @@ using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -85,7 +88,14 @@ namespace InsTsinghua
                 Window.Current.Activate();
             }
             BackgroundTasks.TaskManager.register();
-            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += BackRequested;
+           // try
+            //{
+          //      GetStart();//开启后更新磁贴 
+          //  }
+         //   catch { }
+
+
+                Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += BackRequested;
             Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
         }
         private void OnNavigated(object sender, NavigationEventArgs e)
@@ -130,6 +140,57 @@ namespace InsTsinghua
             var deferral = e.SuspendingOperation.GetDeferral();
             //TODO: 保存应用程序状态并停止任何后台活动
             deferral.Complete();
+        }
+
+        private async void GetStart()
+        {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            if (!(localSettings.Values["FirstStart"] == null))
+            {
+                if (DataAccess.supposedToWorkAnonymously())
+                {
+
+                    try
+                    {
+                        await Notification.update(calendarOnly: true);
+                        // await Appointment.updateCalendar();
+                    }
+                    catch
+                    {
+                    }
+                }
+                else if (!DataAccess.supposedToWorkAnonymously()
+                   && DataAccess.credentialAbsent())
+                {
+                    try
+                    {
+                        await Notification.update(true);
+                        // await Appointment.updateDeadlines();
+                    }
+                    catch (Exception e)
+                    {
+                        // this.errorUpdate.Visibility = Visibility.Visible;
+                        try
+                        {
+                            await Notification.update();
+                        }
+                        catch (Exception) { }
+                    }
+
+                }
+                else if (!DataAccess.credentialAbsent())
+                {
+                    try
+                    {
+                        await Notification.update(calendarOnly: true);
+                        // await Appointment.updateCalendar();
+                    }
+                    catch
+                    {
+                    }
+                }
+                localSettings.Values["FirstStart"] = false;
+            }
         }
     }
 }
