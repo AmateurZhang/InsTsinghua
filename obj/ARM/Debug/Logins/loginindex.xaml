@@ -88,25 +88,29 @@
                 <TextBlock x:ConnectionId='7' Name="Abt1" FontSize="24" Margin="20,0,0,0">About</TextBlock>
             </StackPanel>
 
-            <StackPanel Grid.Row="3" Grid.Column="1" Orientation="Vertical">
+            <ScrollViewer Grid.Row="3" Grid.Column="1" >
+                
+                <StackPanel >
 
-                <TextBlock x:ConnectionId='6' VariableSizedWrapGrid.ColumnSpan="1" TextWrapping="Wrap"  HorizontalAlignment="Left" Name="TP2"  xml:space="preserve">
+                    <TextBlock x:ConnectionId='6' VariableSizedWrapGrid.ColumnSpan="1" TextWrapping="Wrap"  HorizontalAlignment="Left" Name="TP2"  xml:space="preserve">
 登录后，可以方便地查看网络学堂、清华邮箱
 清华IPTV、清华新闻。
-                </TextBlock>
-            </StackPanel>
-            <StackPanel Grid.Row="8" Grid.Column="1" Orientation="Vertical" >
-                <TextBlock x:ConnectionId='5'  Name="Abt2"  VariableSizedWrapGrid.ColumnSpan="1" TextWrapping="Wrap" xml:space="preserve" HorizontalAlignment="Left">
+                    </TextBlock>
+                </StackPanel>
+            </ScrollViewer>
+            <ScrollViewer Grid.Row="4" Grid.Column="1" >
+                <StackPanel  >
+                    <TextBlock x:ConnectionId='5'  Name="Abt2"  VariableSizedWrapGrid.ColumnSpan="1" TextWrapping="Wrap" xml:space="preserve" HorizontalAlignment="Left">
 开发者
 JW Zhang, dept. of Physics.
  https://github.com/AmateurZhang
-Copyright@AmateurZhang,2017                    
-                </TextBlock>
-               
-            </StackPanel>
+Copyright@AmateurZhang,2017
+                    </TextBlock>
+
+                </StackPanel>
+            </ScrollViewer>
 
 
-          
         </Grid>
        
     </Grid>

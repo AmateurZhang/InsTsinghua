@@ -1,4 +1,5 @@
 WinMetadata\Windows.winmd
+Assets\3030.png
 Assets\abouttop_03.jpg
 Assets\BadgeLogo.scale-100.png
 Assets\BadgeLogo.scale-125.png
@@ -46,6 +47,7 @@ Assets\Square44x44Logo.targetsize-32_altform-unplated.png
 Assets\Square44x44Logo.targetsize-48.png
 Assets\Square44x44Logo.targetsize-48_altform-unplated.png
 Assets\Square71x71Logo.scale-100.png
+Assets\Square71x71Logo.scale-125.png
 Assets\Square71x71Logo.scale-150.png
 Assets\Square71x71Logo.scale-200.png
 Assets\Square71x71Logo.scale-400.png

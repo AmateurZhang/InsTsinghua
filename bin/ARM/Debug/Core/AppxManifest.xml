@@ -7,7 +7,7 @@
 
   有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
  -->
-  <Identity Name="39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4" Publisher="CN=thuzh" Version="1.0.6.0" ProcessorArchitecture="arm" />
+  <Identity Name="39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4" Publisher="CN=thuzh" Version="1.0.7.0" ProcessorArchitecture="arm" />
   <mp:PhoneIdentity PhoneProductId="39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>InsTsinghua</DisplayName>
@@ -26,13 +26,14 @@
     <Application Id="App" Executable="InsTsinghua.exe" EntryPoint="InsTsinghua.App">
       <uap:VisualElements DisplayName="InsTsinghua" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="InsTsinghua" BackgroundColor="transparent">
         <uap:LockScreen Notification="badgeAndTileText" BadgeLogo="Assets\BadgeLogo.png" />
-        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
           <uap:ShowNameOnTiles>
             <uap:ShowOn Tile="square150x150Logo" />
             <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
           </uap:ShowNameOnTiles>
         </uap:DefaultTile>
-        <uap:SplashScreen Image="Assets\SplashScreen.png" />
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#FFFFFF" />
       </uap:VisualElements>
       <Extensions>
         <Extension Category="windows.backgroundTasks" EntryPoint="BackgroundTasks.UnifiedUpdateTask">
@@ -51,8 +52,8 @@
     <Extension Category="windows.activatableClass.inProcessServer">
       <InProcessServer>
         <Path>InsTsinghua.exe</Path>
-        <ActivatableClass ActivatableClassId="BackgroundTasks.UnifiedUpdateTask" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="BackgroundTasks.LocalUpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.UnifiedUpdateTask" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="BackgroundTasks.RemoteUpdateTask" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="BackgroundTasks.TaskManager" ThreadingModel="both" />
       </InProcessServer>

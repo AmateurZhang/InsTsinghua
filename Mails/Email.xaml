@@ -14,7 +14,20 @@
             <TextBlock Text="隐私保护" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Padding="20"></TextBlock>
             <Image Source="ms-appx:Assets/glassblack.jpg" Grid.Row="1" Height="60"  Grid.ColumnSpan="2" Margin="3"  HorizontalAlignment="Center"></Image>
             <TextBlock Text="防止周围暗中窥视" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20"></TextBlock>
-            <Button Content="继续" Click="Oninitial" HorizontalAlignment="Center" ></Button>
+            <Button Content="继续" Click="Oninitial" HorizontalAlignment="Center"  Background="MediumPurple" BorderBrush="Purple"></Button>
+            <Button Content="Tips/提示" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="LightGray" Margin="10,20,10,0">
+                <Button.Flyout>
+                    <Flyout Placement="Top">
+                        <Grid>
+                            <TextBlock TextWrapping="Wrap" Margin="2"> 联网状态下，初次进入清华邮箱界面，<LineBreak/>
+                                只需填写邮箱无后缀用户名，再次可一键登录<LineBreak/>
+                                如需要修改用户，请在清华邮箱内部点击退出。
+                            </TextBlock>
+                        </Grid>
+                    </Flyout>
+
+                </Button.Flyout>
+            </Button>
         </StackPanel>
     </Grid>
 </Page>

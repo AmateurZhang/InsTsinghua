@@ -143,3 +143,4 @@
 "D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\ARM\Debug\PackageLayout\Assets\glassblack.jpg"			"Assets\glassblack.jpg"
 "D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\ARM\Debug\PackageLayout\Assets\BadgeLogo.scale-200.png"			"Assets\BadgeLogo.scale-200.png"
 "D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\ARM\Debug\PackageLayout\Assets\abouttop_03.jpg"			"Assets\abouttop_03.jpg"
+"D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\ARM\Debug\PackageLayout\Assets\3030.png"			"Assets\3030.png"

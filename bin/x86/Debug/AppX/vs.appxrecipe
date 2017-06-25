@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>CB6104E715A604F5109F62A3B55AE5DC6D50063627C6E3CFD61ECDA04844AFF2</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>7CF196D346673BC04AA2EF3428CE844E2749AA75A2F7CF4F291EF28FC9C1F57D</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4_1.0.6.0_x86__54jyfhf792se6</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4_54jyfhf792se6!App</RegisteredUserModeAppID>
     <RegisteredPackageID>39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-21T07:56:14.468</Modified>
+      <Modified>2017-06-25T11:39:22.740</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\InsTsinghua.exe">
       <PackagePath>entrypoint\InsTsinghua.exe</PackagePath>
-      <Modified>2017-06-21T07:56:12.987</Modified>
+      <Modified>2017-06-25T11:34:40.889</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuzh\.nuget\packages\HtmlAgilityPack\1.4.9.5\lib\NetCore45\HtmlAgilityPack.dll">
       <PackagePath>HtmlAgilityPack.dll</PackagePath>
@@ -454,39 +454,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\ClassLibrary\bin\x86\Debug\ClassLibrary.dll">
       <PackagePath>ClassLibrary.dll</PackagePath>
-      <Modified>2017-06-20T15:13:16.956</Modified>
+      <Modified>2017-06-25T11:31:30.888</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\BackgroundTasks\bin\x86\Debug\BackgroundTasks.winmd">
       <PackagePath>BackgroundTasks.winmd</PackagePath>
-      <Modified>2017-06-20T15:13:18.308</Modified>
+      <Modified>2017-06-25T11:31:31.856</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\abouttop_03.jpg">
-      <PackagePath>Assets\abouttop_03.jpg</PackagePath>
-      <Modified>2017-06-20T04:16:20.520</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\glassblack.jpg">
-      <PackagePath>Assets\glassblack.jpg</PackagePath>
-      <Modified>2017-06-20T04:50:32.619</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\LearnView.JPG">
-      <PackagePath>Assets\LearnView.JPG</PackagePath>
-      <Modified>2017-03-31T20:35:52.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\NewsView.JPG">
-      <PackagePath>Assets\NewsView.JPG</PackagePath>
-      <Modified>2017-03-31T20:35:52.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\OutlookView.JPG">
-      <PackagePath>Assets\OutlookView.JPG</PackagePath>
-      <Modified>2017-03-31T20:35:52.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Tsinghua.jpg">
-      <PackagePath>Assets\Tsinghua.jpg</PackagePath>
-      <Modified>2017-06-20T12:54:47.502</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\TVView.JPG">
-      <PackagePath>Assets\TVView.JPG</PackagePath>
-      <Modified>2017-03-31T20:35:52.000</Modified>
+    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\3030.png">
+      <PackagePath>Assets\3030.png</PackagePath>
+      <Modified>2017-06-20T15:17:49.608</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\BadgeLogo.scale-100.png">
       <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
@@ -585,23 +561,28 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square310x310Logo.scale-100.png">
       <PackagePath>Assets\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-06-20T13:08:40.584</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square310x310Logo.scale-125.png">
       <PackagePath>Assets\Square310x310Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-06-20T13:08:40.582</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square310x310Logo.scale-150.png">
       <PackagePath>Assets\Square310x310Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-06-20T13:08:40.594</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square310x310Logo.scale-200.png">
       <PackagePath>Assets\Square310x310Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-06-20T13:08:40.712</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square310x310Logo.scale-400.png">
       <PackagePath>Assets\Square310x310Logo.scale-400.png</PackagePath>
-      <Modified>2017-06-20T13:08:40.879</Modified>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-06-25T11:07:32.279</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
@@ -680,18 +661,27 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square71x71Logo.scale-100.png">
       <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-06-20T13:08:39.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square71x71Logo.scale-125.png">
+      <PackagePath>Assets\Square71x71Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2017-06-25T11:34:07.382</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square71x71Logo.scale-150.png">
       <PackagePath>Assets\Square71x71Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-06-20T13:08:39.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square71x71Logo.scale-200.png">
       <PackagePath>Assets\Square71x71Logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-06-20T13:08:39.406</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Square71x71Logo.scale-400.png">
       <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-06-20T13:08:39.676</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\StoreLogo.scale-100.png">
@@ -744,13 +734,41 @@
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <Modified>2017-06-20T13:08:42.022</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\abouttop_03.jpg">
+      <PackagePath>Assets\abouttop_03.jpg</PackagePath>
+      <Modified>2017-06-20T04:16:20.520</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\glassblack.jpg">
+      <PackagePath>Assets\glassblack.jpg</PackagePath>
+      <Modified>2017-06-20T04:50:32.619</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\LearnView.JPG">
+      <PackagePath>Assets\LearnView.JPG</PackagePath>
+      <Modified>2017-03-31T20:35:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\NewsView.JPG">
+      <PackagePath>Assets\NewsView.JPG</PackagePath>
+      <Modified>2017-03-31T20:35:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\OutlookView.JPG">
+      <PackagePath>Assets\OutlookView.JPG</PackagePath>
+      <Modified>2017-03-31T20:35:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\Tsinghua.jpg">
+      <PackagePath>Assets\Tsinghua.jpg</PackagePath>
+      <Modified>2017-06-20T12:54:47.502</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\TVView.JPG">
+      <PackagePath>Assets\TVView.JPG</PackagePath>
+      <Modified>2017-03-31T20:35:52.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-06-19T10:16:40.101</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\InsTsinghua.xr.xml">
       <PackagePath>InsTsinghua.xr.xml</PackagePath>
-      <Modified>2017-06-21T07:48:55.113</Modified>
+      <Modified>2017-06-25T09:27:49.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -759,11 +777,11 @@
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-21T07:56:14.204</Modified>
+      <Modified>2017-06-25T11:39:18.504</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\Core\InsTsinghua.exe">
       <PackagePath>InsTsinghua.exe</PackagePath>
-      <Modified>2017-06-21T07:56:14.464</Modified>
+      <Modified>2017-06-25T11:39:22.728</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

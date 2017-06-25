@@ -23,6 +23,11 @@
 				</Candidate>
 			</NamedResource>
 			<ResourceMapSubtree name="Assets">
+				<NamedResource name="3030.png" uri="ms-resource://39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4/Files/Assets/3030.png">
+					<Candidate type="Path">
+						<Value>Assets\3030.png</Value>
+					</Candidate>
+				</NamedResource>
 				<NamedResource name="abouttop_03.jpg" uri="ms-resource://39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4/Files/Assets/abouttop_03.jpg">
 					<Candidate type="Path">
 						<Value>Assets\abouttop_03.jpg</Value>

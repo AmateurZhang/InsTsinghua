@@ -108,7 +108,9 @@
                     <Flyout Placement="Top">
                         <Grid>
                             <TextBlock TextWrapping="Wrap" Margin="2"> 校内连接Tsinghua WiFi时选择校内模式,不走流量；<LineBreak/>
-                                校外或者连接其他网络时请选择校外模式。</TextBlock>
+                                校外或者连接其他网络时请选择校外模式。<LineBreak/>
+                                校外网络需要 IPV6 支持。
+                            </TextBlock>
                         </Grid>
                     </Flyout>
 

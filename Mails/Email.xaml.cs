@@ -32,7 +32,14 @@ namespace InsTsinghua.Mails
         private async void Oninitial(object sender, RoutedEventArgs e)
         {
 
-
+            if(DataAccess.isDemo())
+            {
+                MessageDialog a = new MessageDialog("测试账号");
+                await a.ShowAsync();
+                Webemail.Visibility = Visibility.Visible;
+                Warning.Visibility = Visibility.Collapsed;
+            }
+            else
             try
             {
                 string username = DataAccess.getLocalSettings()["username"].ToString();
