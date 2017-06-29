@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="51420AmateurZhang.InsTsinghua" version="1.0" primary="true">
+		<Qualifiers>
+			<AlternateForm>UNPLATED</AlternateForm>
+			<Scale>200</Scale>
+			<TargetSize>256,16,24,32,48</TargetSize>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/App.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="InsTsinghua.xr.xml" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/InsTsinghua.xr.xml">
+				<Candidate type="Path">
+					<Value>InsTsinghua.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/MainPage.xbf">
+				<Candidate type="EmbeddedData">
+					<Base64Value>[Embedded Binary Data]</Base64Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="3030.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/3030.png">
+					<Candidate type="Path">
+						<Value>Assets\3030.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="abouttop_03.jpg" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/abouttop_03.jpg">
+					<Candidate type="Path">
+						<Value>Assets\abouttop_03.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="BadgeLogo.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/BadgeLogo.png"/>
+				<NamedResource name="glassblack.jpg" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/glassblack.jpg">
+					<Candidate type="Path">
+						<Value>Assets\glassblack.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LearnView.JPG" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/LearnView.JPG">
+					<Candidate type="Path">
+						<Value>Assets\LearnView.JPG</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LockScreenLogo.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/LockScreenLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\LockScreenLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NewStoreLogo.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/NewStoreLogo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\NewStoreLogo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="NewsView.JPG" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/NewsView.JPG">
+					<Candidate type="Path">
+						<Value>Assets\NewsView.JPG</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="OutlookView.JPG" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/OutlookView.JPG">
+					<Candidate type="Path">
+						<Value>Assets\OutlookView.JPG</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square150x150Logo.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/Square150x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square150x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square310x310Logo.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/Square310x310Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square310x310Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square44x44Logo.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/Square44x44Logo.png">
+					<Candidate qualifiers="TargetSize-48, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-48_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-48" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-48.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-32_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-32" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-32.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-256_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-256" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-256.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-24" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-24.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16, AlternateForm-UNPLATED" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-16_altform-unplated.png</Value>
+					</Candidate>
+					<Candidate qualifiers="TargetSize-16" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.targetsize-16.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square44x44Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Square71x71Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/StoreLogo.png">
+					<Candidate type="Path">
+						<Value>Assets\StoreLogo.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="tsing.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/tsing.png">
+					<Candidate type="Path">
+						<Value>Assets\tsing.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Tsinghua.jpg" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/Tsinghua.jpg">
+					<Candidate type="Path">
+						<Value>Assets\Tsinghua.jpg</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TVView.JPG" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/TVView.JPG">
+					<Candidate type="Path">
+						<Value>Assets\TVView.JPG</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Wide310x150Logo.png" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Assets/Wide310x150Logo.png">
+					<Candidate qualifiers="Scale-200" isDefault="true" type="Path">
+						<Value>Assets\Wide310x150Logo.scale-200.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Courses">
+				<NamedResource name="ContentDialogAnc.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Courses/ContentDialogAnc.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MyUserControlAnc.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Courses/MyUserControlAnc.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MyUserControlCourses.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Courses/MyUserControlCourses.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MyUserControlHomework.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Courses/MyUserControlHomework.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Weblearn.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Courses/Weblearn.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Logins">
+				<NamedResource name="loginindex.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Logins/loginindex.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="PasswordDialog.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Logins/PasswordDialog.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Mails">
+				<NamedResource name="Email.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Mails/Email.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Newss">
+				<NamedResource name="News.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Newss/News.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Properties">
+				<NamedResource name="Default.rd.xml" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Properties/Default.rd.xml">
+					<Candidate type="Path">
+						<Value>Properties\Default.rd.xml</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="TsinghuaTVs">
+				<NamedResource name="MyUserControlTV1.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/TsinghuaTVs/MyUserControlTV1.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="TsinghuaTV.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/TsinghuaTVs/TsinghuaTV.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Welcomes">
+				<NamedResource name="Startspage.xbf" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/Welcomes/Startspage.xbf">
+					<Candidate type="EmbeddedData">
+						<Base64Value>[Embedded Binary Data]</Base64Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="WinMetadata">
+				<NamedResource name="Windows.winmd" uri="ms-resource://51420AmateurZhang.InsTsinghua/Files/WinMetadata/Windows.winmd">
+					<Candidate type="Path">
+						<Value>WinMetadata\Windows.winmd</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

@@ -1,0 +1,15 @@
+/osver:6.2
+/appcontainer
+/runtime:mrt100_app
+/eh:clr
+/pdb
+"/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\ARM\ilc\lib\Native\vmath.lib"
+/customImports
+/methodBodyFolding
+"D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\ARM\Release\ilc\intermediate\MDIL\InsTsinghua.mdilexe"
+"/i:D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\ARM\Release\ilc\intermediate\MDIL\"
+/out:"D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\ARM\Release\ilc\intermediate\Native\InsTsinghua.exe"
+"/res:D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\ARM\Release\ilc\intermediate\Native.res"
+"/i:C:\Program Files (x86)\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Framework.1.3\1.3\ARM\ret\MDIL"
+/shimexe
+/classlib:SharedLibrary

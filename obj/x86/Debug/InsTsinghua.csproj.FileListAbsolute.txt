@@ -262,3 +262,4 @@ D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\x86\Debug\re
 D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\x86\Debug\resources.en-us.resfiles.intermediate
 D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\x86\Debug\HtmlAgilityPack.pri.xml
 D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\x86\Debug\ProjectArchitectures.txt
+D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\Core\ForBundle\AppxManifest.xml

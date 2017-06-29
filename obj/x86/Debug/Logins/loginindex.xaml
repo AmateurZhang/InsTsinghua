@@ -49,7 +49,7 @@
                 <RowDefinition Height="Auto"></RowDefinition>
               
                 <RowDefinition Height="1*"></RowDefinition>
-                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
              
                 <RowDefinition Height="*"></RowDefinition>
                 <RowDefinition Height="*"></RowDefinition>
@@ -70,7 +70,7 @@
                 <TextBlock FontSize="24" Margin="20,0,0,0">登录</TextBlock>
             </StackPanel>
             <StackPanel Grid.Row="2" Grid.Column="1">
-                <Button x:ConnectionId='9' Content="登录" HorizontalAlignment="Left" Name="btnLogin"                         VerticalAlignment="Center"/>
+                <Button x:ConnectionId='9' Content="登录" HorizontalAlignment="Left" Name="btnLogin"                         VerticalAlignment="Center" Margin="5"/>
                 <ProgressRing x:ConnectionId='10' x:Name="progressLogin" HorizontalAlignment="Left" Margin="208,0,0,0" VerticalAlignment="Top" Height="22" Width="22" RenderTransformOrigin="0.5,0.5">
                     <ProgressRing.RenderTransform>
                         <CompositeTransform TranslateX="5" TranslateY="5"/>
@@ -93,8 +93,9 @@
                 <StackPanel >
 
                     <TextBlock x:ConnectionId='6' VariableSizedWrapGrid.ColumnSpan="1" TextWrapping="Wrap"  HorizontalAlignment="Left" Name="TP2"  xml:space="preserve">
-登录后，可以方便地查看网络学堂、清华邮箱
-清华IPTV、清华新闻。
+登录后，可以方便地查看网络学堂、清华邮箱、清华IPTV、清华新闻。
+课程公告、作业会自动刷新，公告相关内容会显示在磁贴上。
+转到登录页可以手动刷新滚动磁贴，如需联网更新，请按下学堂页中刷新按钮。                                     
                     </TextBlock>
                 </StackPanel>
             </ScrollViewer>
@@ -105,6 +106,10 @@
 JW Zhang, dept. of Physics.
  https://github.com/AmateurZhang
 Copyright@AmateurZhang,2017
+
+部分代码参考了lizy14/Tsinghua-UWP项目
+https://github.com/lizy14/Tsinghua-UWP
+表示感谢                        
                     </TextBlock>
 
                 </StackPanel>

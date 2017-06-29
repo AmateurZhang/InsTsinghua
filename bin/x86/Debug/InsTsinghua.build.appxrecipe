@@ -9,7 +9,7 @@
     <SolutionConfiguration>Debug|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4</PackageIdentityName>
-    <PackageIdentityPublisher>CN=thuzh</PackageIdentityPublisher>
+    <PackageIdentityPublisher>CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E</PackageIdentityPublisher>
     <IntermediateOutputPath>D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
@@ -346,25 +346,8 @@
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\3030.png">
       <PackagePath>Assets\3030.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\BadgeLogo.scale-100.png">
-      <PackagePath>Assets\BadgeLogo.scale-100.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\BadgeLogo.scale-125.png">
-      <PackagePath>Assets\BadgeLogo.scale-125.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\BadgeLogo.scale-150.png">
-      <PackagePath>Assets\BadgeLogo.scale-150.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\BadgeLogo.scale-200.png">
-      <PackagePath>Assets\BadgeLogo.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\BadgeLogo.scale-400.png">
       <PackagePath>Assets\BadgeLogo.scale-400.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\NewStoreLogo.scale-100.png">
       <PackagePath>Assets\NewStoreLogo.scale-100.png</PackagePath>

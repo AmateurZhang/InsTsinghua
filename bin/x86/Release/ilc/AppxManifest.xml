@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp build" xmlns:build="http://schemas.microsoft.com/developer/appx/2015/build">
+  <!--
+  此包清单文件由生成过程生成。
+
+  如果重新生成此文件，将丢失对其所做的更改。若要更正此文件中的错误，请编辑源 .appxmanifest 文件。
+
+  有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
+ -->
+  <Identity Name="51420AmateurZhang.InsTsinghua" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.4.0" ProcessorArchitecture="x86" />
+  <mp:PhoneIdentity PhoneProductId="39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>InsTsinghua</DisplayName>
+    <PublisherDisplayName>AmateurZhang</PublisherDisplayName>
+    <Logo>Assets\NewStoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10586.0" MaxVersionTested="10.0.14393.0" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00" MinVersion="14.0.22929.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.NET.Native.Framework.1.3" MinVersion="1.3.24201.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.NET.Native.Runtime.1.4" MinVersion="1.4.24201.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="ZH-CN" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="InsTsinghua.exe" EntryPoint="InsTsinghua.App">
+      <uap:VisualElements DisplayName="InsTsinghua" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="InsTsinghua" BackgroundColor="transparent">
+        <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" Square310x310Logo="Assets\Square310x310Logo.png" Square71x71Logo="Assets\Square71x71Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#FFFFFF" />
+      </uap:VisualElements>
+      <Extensions>
+        <Extension Category="windows.backgroundTasks" EntryPoint="BackgroundTasks.UnifiedUpdateTask">
+          <BackgroundTasks>
+            <Task Type="timer" />
+            <Task Type="pushNotification" />
+          </BackgroundTasks>
+        </Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>InsTsinghua.dll</Path>
+        <ActivatableClass ActivatableClassId="BackgroundTasks.LocalUpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.UnifiedUpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.RemoteUpdateTask" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="BackgroundTasks.TaskManager" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
+  <build:Metadata>
+    <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
+    <build:Item Name="VisualStudio" Version="14.0" />
+    <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2015" />
+    <build:Item Name="OperatingSystem" Version="10.0.14393.0 (rs1_release.160715-1616)" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25431.1" />
+    <build:Item Name="ProjectGUID" Value="{ED32C39B-E970-4543-8D78-8048C1700D64}" />
+    <build:Item Name="ilc.exe" Version="1.4.24208.01 built by: PROJECTNGDR2" />
+    <build:Item Name="OptimizingToolset" Value="ilc.exe" />
+    <build:Item Name="UseDotNetNativeSharedAssemblyFrameworkPackage" Value="True" />
+    <build:Item Name="UniversalGenericsOptOut" Value="false" />
+    <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="14.0.25527.1" />
+    <build:Item Name="WindowsMobile" Version="10.0.14393.0" />
+    <build:Item Name="MakePri.exe" Version="10.0.14393.33 (rs1_release_sec.160727-1952)" />
+  </build:Metadata>
+</Package>

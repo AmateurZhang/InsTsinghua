@@ -185,8 +185,8 @@
       <RootProperty Name="Visibility" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Background" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
       <RootProperty Name="Flyout" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontSize" />

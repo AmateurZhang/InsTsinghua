@@ -25,10 +25,10 @@
                     
                        
                         <TextBlock Grid.Row="1" Height="Auto" Width="Auto" HorizontalAlignment="Center" FontSize="36" TextWrapping="Wrap" TextAlignment="Center">
-                            自动同步课程、作业
+                            全新界面,信息直达
                         </TextBlock>
                          <TextBlock Grid.Row="2" Height="Auto" Width="Auto" HorizontalAlignment="Center" TextWrapping="Wrap" TextAlignment="Center">
-                            向右滑动, 或点击右侧向右箭头, 如希望跳过, 点击左边任意按钮即可
+                            向右滑动, 或点击右侧向右箭头
                         </TextBlock>
                     </Grid>
                 </FlipViewItem>

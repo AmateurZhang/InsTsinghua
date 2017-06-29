@@ -1,6 +1,6 @@
-MainPackage=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\ARM\Debug\InsTsinghua_1.0.7.0_ARM_Debug.appx
-SymbolPackage=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\AppPackages\InsTsinghua_1.0.7.0_Debug_Test\InsTsinghua_1.0.7.0_ARM_Debug.appxsym
-ResourcePack=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\ARM\Debug\InsTsinghua_1.0.7.0_scale-100.appx
-ResourcePack=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\ARM\Debug\InsTsinghua_1.0.7.0_scale-125.appx
-ResourcePack=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\ARM\Debug\InsTsinghua_1.0.7.0_scale-150.appx
-ResourcePack=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\ARM\Debug\InsTsinghua_1.0.7.0_scale-400.appx
+MainPackage=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\ARM\Release\InsTsinghua_1.1.4.0_ARM.appx
+SymbolPackage=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\AppPackages\InsTsinghua_1.1.4.0_Test\InsTsinghua_1.1.4.0_ARM.appxsym
+ResourcePack=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\ARM\Release\InsTsinghua_1.1.4.0_scale-100.appx
+ResourcePack=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\ARM\Release\InsTsinghua_1.1.4.0_scale-125.appx
+ResourcePack=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\ARM\Release\InsTsinghua_1.1.4.0_scale-150.appx
+ResourcePack=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\ARM\Release\InsTsinghua_1.1.4.0_scale-400.appx
