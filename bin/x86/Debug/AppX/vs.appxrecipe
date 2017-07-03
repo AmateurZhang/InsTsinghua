@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-26T09:21:51.670</Modified>
+      <Modified>2017-07-03T00:50:46.049</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\InsTsinghua.exe">
       <PackagePath>entrypoint\InsTsinghua.exe</PackagePath>
-      <Modified>2017-06-26T09:21:49.869</Modified>
+      <Modified>2017-07-03T00:50:44.797</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuzh\.nuget\packages\HtmlAgilityPack\1.4.9.5\lib\NetCore45\HtmlAgilityPack.dll">
       <PackagePath>HtmlAgilityPack.dll</PackagePath>
@@ -454,11 +454,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\ClassLibrary\bin\x86\Debug\ClassLibrary.dll">
       <PackagePath>ClassLibrary.dll</PackagePath>
-      <Modified>2017-06-25T11:31:30.888</Modified>
+      <Modified>2017-07-02T14:37:12.264</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\BackgroundTasks\bin\x86\Debug\BackgroundTasks.winmd">
       <PackagePath>BackgroundTasks.winmd</PackagePath>
-      <Modified>2017-06-25T11:31:31.856</Modified>
+      <Modified>2017-07-02T14:37:13.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\Assets\3030.png">
       <PackagePath>Assets\3030.png</PackagePath>
@@ -747,7 +747,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\InsTsinghua.xr.xml">
       <PackagePath>InsTsinghua.xr.xml</PackagePath>
-      <Modified>2017-06-25T12:45:26.700</Modified>
+      <Modified>2017-07-03T00:17:07.761</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -756,11 +756,11 @@
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-06-26T09:21:51.341</Modified>
+      <Modified>2017-07-03T00:25:15.736</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\Core\InsTsinghua.exe">
       <PackagePath>InsTsinghua.exe</PackagePath>
-      <Modified>2017-06-26T09:21:51.655</Modified>
+      <Modified>2017-07-03T00:50:46.044</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -45,10 +45,18 @@ namespace InsTsinghua.Mails
                 string username = DataAccess.getLocalSettings()["username"].ToString();
                 var vault = new Windows.Security.Credentials.PasswordVault();
                 string password = vault.Retrieve("Tsinghua_Learn_Website", username).Password;
+                string emailname = await DataAccess.getemailName();
+                    Webemail.Visibility = Visibility.Visible;
+                    Warning.Visibility = Visibility.Collapsed;
 
-                string js1 = "";
-                js1 += $"document.getElementsByName('password')[0].setAttribute('value','{password}');";
-                await Webemail.InvokeScriptAsync("eval", new string[] { js1 });
+                    string js1 = "";
+                    js1 += $"document.getElementsByName('password')[0].setAttribute('value','{password}');";
+                    await Webemail.InvokeScriptAsync("eval", new string[] { js1 });
+
+                    string js =$"var nm='{emailname}';";
+                    js += "document.getElementById('username').value=nm;";
+                    await Webemail.InvokeScriptAsync("eval", new string[] { js });
+
                 string js2 = "document.getElementsByName('action:login')[0].click();";
                 await Webemail.InvokeScriptAsync("eval", new string[] { js2 });
 
