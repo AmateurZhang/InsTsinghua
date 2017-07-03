@@ -22,6 +22,7 @@ using InsTsinghua.Courses;
 using InsTsinghua.Mails;
 using InsTsinghua.Newss;
 using InsTsinghua.Welcomes;
+using Windows.UI.Core;
 
 //“空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409 上有介绍
 
@@ -32,6 +33,7 @@ namespace InsTsinghua
     /// </summary>
     public sealed partial class MainPage : Page
     {
+       
         private List<NavMenuItem> navMenuPrimaryItem = new List<NavMenuItem>(
             new[]
             {
@@ -89,6 +91,7 @@ namespace InsTsinghua
         public MainPage()
         {
             this.InitializeComponent();
+            SystemNavigationManager.GetForCurrentView().BackRequested += PageBackRequested;
             NavigationCacheMode = NavigationCacheMode.Enabled;
             var bb = AnalyticsInfo.VersionInfo.DeviceFamily;
             if (bb == "Windows.Desktop" || bb == "Windows.Tablet")
@@ -108,7 +111,7 @@ namespace InsTsinghua
                 // Highest.Background = "Black";
 
             }
-
+            
             NavMenuPrimaryListView.ItemsSource = navMenuPrimaryItem;
             NavMenuSecondaryListView.ItemsSource = navMenuSecondaryItem;
             // SplitView 开关
@@ -122,6 +125,19 @@ namespace InsTsinghua
             // 默认页
            
             RootFrame.SourcePageType = typeof(News);
+        }
+
+        private void PageBackRequested(object sender,BackRequestedEventArgs e)
+        {
+            if (RootFrame == null)
+                return;
+            if(RootFrame.CanGoBack)
+            {
+                e.Handled = true;    
+                           
+                RootFrame.GoBack();
+               
+            }
         }
         private void NavMenuListView_ItemClick(object sender, ItemClickEventArgs e)
         {
@@ -138,7 +154,7 @@ namespace InsTsinghua
             NavMenuItem item = e.ClickedItem as NavMenuItem;
             // Rectangle显示并导航
             item.Selected = Visibility.Visible;
-            TitleTextBlock.Text = item.Label;
+           // TitleTextBlock.Text = item.Label;
             if (item.DestPage != null)
             {
                 RootFrame.Navigate(item.DestPage);

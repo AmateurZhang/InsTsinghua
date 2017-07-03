@@ -115,6 +115,7 @@ namespace InsTsinghua
                 e.Handled = true;
                 rootFrame.GoBack();
             }
+           
 
             
         }

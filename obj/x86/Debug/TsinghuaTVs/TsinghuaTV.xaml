@@ -7,11 +7,48 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
                            >
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="MediumPurple">
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
-                <VisualState x:ConnectionId='2' x:Name="NarrowLayout">
+                <VisualState x:ConnectionId='2' x:Name="NarrowLayout0">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                        <AdaptiveTrigger MinWindowHeight="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:ConnectionId='3' x:Name="WideLayout0">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TitleTextBlock.Margin" Value="5,2,0,2"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <!---->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="MediumPurple" Height="48">
+            <TextBlock x:ConnectionId='11' Name="TitleTextBlock"
+                      Grid.Row="0"
+                       FontSize="24"
+                        Margin="53,2,0,2"
+                       Text="电视"
+                      VerticalAlignment="Center"
+                           Foreground="Black"   
+                       />
+        </Grid>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Row="1">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='4' x:Name="NarrowLayout">
                     <VisualState.StateTriggers>
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
@@ -22,16 +59,17 @@
                         <Setter Target="TVList.Height" Value="165"/>
                         <Setter Target="TVList.(Grid.ColumnSpan)" Value="2"/>
                         <Setter Target="TVPlayer.(Grid.ColumnSpan)" Value="2"/>
-                    </VisualState.Setters>
+                        
+                        </VisualState.Setters>
                 </VisualState>
-                <VisualState x:ConnectionId='3' x:Name="WideLayout">
+                <VisualState x:ConnectionId='5' x:Name="WideLayout">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="800"/>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
+                        
 
-
-                    </VisualState.Setters>
+                        </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
@@ -57,8 +95,8 @@
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <ScrollViewer x:ConnectionId='5' Grid.Column="0" Name="TVList">
-                <GridView x:ConnectionId='8' Name="TVGrid" 
+            <ScrollViewer x:ConnectionId='7' Grid.Column="0" Name="TVList">
+                <GridView x:ConnectionId='10' Name="TVGrid" 
                                                     
                           HorizontalAlignment="Left"
                       VerticalAlignment="Stretch"
@@ -74,10 +112,10 @@
             </ScrollViewer>
 
 
-            <Grid x:ConnectionId='6' Grid.Column="1" Name="TVPlayer">
+            <Grid x:ConnectionId='8' Grid.Column="1" Name="TVPlayer">
                 <!-- <WebView  x:Name="Webview" Source="https://iptv.tsinghua.edu.cn/">
                 </WebView>-->
-                <MediaElement x:ConnectionId='7' Name="MyMedias" AutoPlay="True"  AreTransportControlsEnabled="True"                                                   >
+                <MediaElement x:ConnectionId='9' Name="MyMedias" AutoPlay="True"  AreTransportControlsEnabled="True"                                                   >
                     <MediaElement.TransportControls>
                         <MediaTransportControls IsCompact="True" 
                                                     IsFullWindowButtonVisible="True"
@@ -102,7 +140,7 @@
 
             </Grid.ColumnDefinitions>
 
-            <ToggleSwitch x:ConnectionId='4'  VerticalAlignment="Center" Margin="10,0,0,0" Name="InOut" Grid.Column="0" OnContent="校内" OffContent="校外" IsOn="True" Width="116" ></ToggleSwitch>
+            <ToggleSwitch x:ConnectionId='6'  VerticalAlignment="Center" Margin="10,0,0,0" Name="InOut" Grid.Column="0" OnContent="校内" OffContent="校外" IsOn="True" Width="116" ></ToggleSwitch>
             <Button Content="Tips/提示" Grid.Column="1" HorizontalAlignment="Right" Background="MediumPurple" Margin="10,0,10,0">
                 <Button.Flyout>
                     <Flyout Placement="Top">
@@ -119,6 +157,7 @@
             <!-- <TextBlock  Grid.Column="1" Height="Auto"  Width="Auto"  TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Right" Text="校内连接Tsinghua WiFi时选择校内模式,不走流量；校外或者连接其他网络时请选择校外模式"></TextBlock>-->
         </Grid>
 
+    </Grid>
     </Grid>
 </Page>
 

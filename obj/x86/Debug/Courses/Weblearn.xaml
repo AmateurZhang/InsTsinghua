@@ -8,12 +8,48 @@
     mc:Ignorable="d"
                       
     >
-    
-        
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='2' x:Name="NarrowLayout0">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                        <AdaptiveTrigger MinWindowHeight="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:ConnectionId='3' x:Name="WideLayout0">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TitleTextBlock.Margin" Value="5,2,0,2"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <!---->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="MediumPurple" Height="48">
+            <TextBlock x:ConnectionId='18' Name="TitleTextBlock"
+                      Grid.Row="0"
+                       FontSize="24"
+                        Margin="53,2,0,2"
+                       Text="学堂"
+                      VerticalAlignment="Center"
+                           Foreground="Black"   
+                       />
+        </Grid>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Row="1">
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup>
-                    <VisualState x:ConnectionId='2' x:Name="NarrowLayout">
+                    <VisualState x:ConnectionId='4' x:Name="NarrowLayout">
                         <VisualState.StateTriggers>
                             <AdaptiveTrigger MinWindowWidth="0"/>
                         </VisualState.StateTriggers>
@@ -27,12 +63,14 @@
                             <Setter Target="Coursegd.(Grid.RowSpan)" Value="1"/>
                         </VisualState.Setters>
                     </VisualState>
-                    <VisualState x:ConnectionId='3' x:Name="WideLayout">
+                 
+
+                    <VisualState x:ConnectionId='5' x:Name="WideLayout">
                         <VisualState.StateTriggers>
-                            <AdaptiveTrigger MinWindowWidth="500"/>
+                            <AdaptiveTrigger MinWindowWidth="700"/>
                         </VisualState.StateTriggers>
                         <VisualState.Setters>
-
+                         
                         </VisualState.Setters>
                     </VisualState>
                 </VisualStateGroup>
@@ -51,26 +89,26 @@
                 <RowDefinition Height="Auto"></RowDefinition>
             </Grid.RowDefinitions>
             <StackPanel Orientation="Horizontal">
-                <TextBlock x:ConnectionId='14'  Name="Cousetitle" Text="课程列表"  Height="Auto" Width="Auto"  FontSize="32" Margin="20,5,20,5" TextAlignment="Left"></TextBlock>
-                <Button x:ConnectionId='15' BorderBrush="MediumVioletRed" Name="Coursebuttons" FontFamily="Segoe MDL2 Assets" Content="&#xE117;"                             Visibility="Visible"></Button>
+                <TextBlock x:ConnectionId='16'  Name="Cousetitle" Text="课程列表"  Height="Auto" Width="Auto"  FontSize="32" Margin="20,5,20,5" TextAlignment="Left"></TextBlock>
+                <Button x:ConnectionId='17' BorderBrush="MediumVioletRed" Name="Coursebuttons" FontFamily="Segoe MDL2 Assets" Content="&#xE117;"                             Visibility="Visible"></Button>
             </StackPanel>
 
 
-            <TextBlock x:ConnectionId='4'  Name="coursetry" Text="trying" Visibility="Collapsed"></TextBlock>
+            <TextBlock x:ConnectionId='6'  Name="coursetry" Text="trying" Visibility="Collapsed"></TextBlock>
 
 
 
 
-            <Grid x:ConnectionId='5' Grid.Row="1"  Name="Coursegd" Grid.RowSpan="3">
+            <Grid x:ConnectionId='7' Grid.Row="1"  Name="Coursegd" Grid.RowSpan="3">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="Auto"></RowDefinition>
                 </Grid.RowDefinitions>
-                <ProgressRing x:ConnectionId='11' Width="50" Height="50" Visibility="Visible"  IsActive="False" x:Name="PR0" Canvas.ZIndex="10" VerticalAlignment="Top" >
+                <ProgressRing x:ConnectionId='13' Width="50" Height="50" Visibility="Visible"  IsActive="False" x:Name="PR0" Canvas.ZIndex="10" VerticalAlignment="Top" >
 
                 </ProgressRing>
                 <ScrollViewer  >
-                    <ListView x:ConnectionId='13' Name="CourseGrid" 
+                    <ListView x:ConnectionId='15' Name="CourseGrid" 
                                                          
                           HorizontalAlignment="Left"
                       VerticalAlignment="Stretch"
@@ -88,15 +126,15 @@
                     </ListView>
 
                 </ScrollViewer>
-                <Rectangle x:ConnectionId='12' Name="BTMline" Grid.Row="1" Width="1000" Grid.ColumnSpan="3" Fill="MediumPurple" Height="1.5" Margin="3" VerticalAlignment="Bottom"></Rectangle>
+                <Rectangle x:ConnectionId='14' Name="BTMline" Grid.Row="1" Width="1000" Grid.ColumnSpan="3" Fill="MediumPurple" Height="1.5" Margin="3" VerticalAlignment="Bottom"></Rectangle>
             </Grid>
 
-            <Pivot x:ConnectionId='6' Grid.Column="2" Grid.RowSpan="3" Name="CoursePivot"                                                >
+            <Pivot x:ConnectionId='8' Grid.Column="2" Grid.RowSpan="3" Name="CoursePivot"                                                >
                 <PivotItem Header="作业">
                     <ScrollViewer >
                         <Grid>
-                        <TextBlock x:ConnectionId='9' Visibility="Collapsed" Name="NoData" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10">无数据</TextBlock>
-                        <ListView x:ConnectionId='10' Name="HWGrid" 
+                        <TextBlock x:ConnectionId='11' Visibility="Collapsed" Name="NoData" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10">无数据</TextBlock>
+                        <ListView x:ConnectionId='12' Name="HWGrid" 
                                                      
                                                                   
                           Margin="0,0,0,0"
@@ -119,8 +157,8 @@
                 <PivotItem Header="公告" >
                     <ScrollViewer  >
                         <StackPanel>
-                        <TextBlock x:ConnectionId='7' Visibility="Collapsed" Name="NoData1" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10">无数据</TextBlock>
-                        <ListView x:ConnectionId='8' Name="AncGrid"   
+                        <TextBlock x:ConnectionId='9' Visibility="Collapsed" Name="NoData1" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10">无数据</TextBlock>
+                        <ListView x:ConnectionId='10' Name="AncGrid"   
                                                           
                                                                     
                           Margin="0,0,0,0"
@@ -147,5 +185,7 @@
 
 
         </Grid>
+
+    </Grid>
 </Page>
 

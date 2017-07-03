@@ -7,8 +7,45 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
      Loaded="REFRESH_Click">
+    <Grid Background="MediumPurple">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="NarrowLayout0">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                        <AdaptiveTrigger MinWindowHeight="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="WideLayout0">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TitleTextBlock.Margin" Value="5,2,0,2"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <!---->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="MediumPurple" Height="48">
+            <TextBlock Name="TitleTextBlock"
+                      Grid.Row="0"
+                       FontSize="24"
+                        Margin="53,2,0,2"
+                       Text="电视"
+                      VerticalAlignment="Center"
+                           Foreground="Black"   
+                       />
+        </Grid>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Row="1">
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
                 <VisualState x:Name="NarrowLayout">
@@ -22,16 +59,17 @@
                         <Setter Target="TVList.Height" Value="165"/>
                         <Setter Target="TVList.(Grid.ColumnSpan)" Value="2"/>
                         <Setter Target="TVPlayer.(Grid.ColumnSpan)" Value="2"/>
-                    </VisualState.Setters>
+                        
+                        </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="WideLayout">
                     <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="800"/>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
+                        
 
-
-                    </VisualState.Setters>
+                        </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
@@ -119,5 +157,6 @@
             <!-- <TextBlock  Grid.Column="1" Height="Auto"  Width="Auto"  TextWrapping="Wrap" VerticalAlignment="Center" HorizontalAlignment="Right" Text="校内连接Tsinghua WiFi时选择校内模式,不走流量；校外或者连接其他网络时请选择校外模式"></TextBlock>-->
         </Grid>
 
+    </Grid>
     </Grid>
 </Page>

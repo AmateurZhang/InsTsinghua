@@ -7,14 +7,51 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     >
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='1' x:Name="NarrowLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                        <AdaptiveTrigger MinWindowHeight="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                       
+                    </VisualState.Setters>
+                </VisualState>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <WebView x:ConnectionId='1' Name="Webemail" Source="http://mails.tsinghua.edu.cn/coremail/xphone/index.jsp" Visibility="Collapsed"></WebView>
-        <StackPanel x:ConnectionId='2' Name="Warning">
+                <VisualState x:ConnectionId='2' x:Name="WideLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TitleTextBlock.Margin" Value="5,2,0,2"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <!---->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="MediumPurple" Height="48">
+        <TextBlock x:ConnectionId='6' Name="TitleTextBlock"
+                      Grid.Row="0"
+                       FontSize="24"
+                        Margin="53,2,0,2"
+                       Text="邮箱"
+                      VerticalAlignment="Center"
+                           Foreground="Black"   
+                       />
+        </Grid>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Row="1">
+        <WebView x:ConnectionId='3' Name="Webemail" Source="http://mails.tsinghua.edu.cn/coremail/xphone/index.jsp" Visibility="Collapsed"></WebView>
+        <StackPanel x:ConnectionId='4' Name="Warning">
             <TextBlock Text="隐私保护" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Padding="20"></TextBlock>
             <Image Source="ms-appx:Assets/glassblack.jpg" Grid.Row="1" Height="60"  Grid.ColumnSpan="2" Margin="3"  HorizontalAlignment="Center"></Image>
             <TextBlock Text="防止周围暗中窥视" HorizontalAlignment="Center" VerticalAlignment="Center" Padding="20"></TextBlock>
-            <Button x:ConnectionId='3' Content="继续"                   HorizontalAlignment="Center"  Background="MediumPurple" BorderBrush="Purple"></Button>
+            <Button x:ConnectionId='5' Content="继续"                   HorizontalAlignment="Center"  Background="MediumPurple" BorderBrush="Purple"></Button>
             <Button Content="Tips/提示" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Bottom" Background="LightGray" Margin="10,20,10,0">
                 <Button.Flyout>
                     <Flyout Placement="Top">
@@ -29,6 +66,7 @@
                 </Button.Flyout>
             </Button>
         </StackPanel>
+    </Grid>
     </Grid>
 </Page>
 

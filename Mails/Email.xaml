@@ -7,8 +7,45 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     >
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="NarrowLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                        <AdaptiveTrigger MinWindowHeight="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                       
+                    </VisualState.Setters>
+                </VisualState>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+                <VisualState x:Name="WideLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TitleTextBlock.Margin" Value="5,2,0,2"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <!---->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="MediumPurple" Height="48">
+        <TextBlock Name="TitleTextBlock"
+                      Grid.Row="0"
+                       FontSize="24"
+                        Margin="53,2,0,2"
+                       Text="邮箱"
+                      VerticalAlignment="Center"
+                           Foreground="Black"   
+                       />
+        </Grid>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Row="1">
         <WebView Name="Webemail" Source="http://mails.tsinghua.edu.cn/coremail/xphone/index.jsp" Visibility="Collapsed"></WebView>
         <StackPanel Name="Warning">
             <TextBlock Text="隐私保护" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="48" Padding="20"></TextBlock>
@@ -29,5 +66,6 @@
                 </Button.Flyout>
             </Button>
         </StackPanel>
+    </Grid>
     </Grid>
 </Page>

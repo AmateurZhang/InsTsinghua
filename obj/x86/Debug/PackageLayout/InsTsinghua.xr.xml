@@ -77,13 +77,13 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="Width" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="Foreground" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="InsTsinghua.Courses.MyUserControlAnc" />
@@ -198,9 +198,6 @@
     <RootType FullName="InsTsinghua.Courses.Weblearn" />
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Children" />
-      <RootProperty Name="Background" />
-      <RootMethod Name="GetRightOf" />
-      <RootMethod Name="SetRightOf" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />

@@ -24,6 +24,7 @@
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Background" />
+      <RootProperty Name="Height" />
       <RootProperty Name="Name" />
       <RootProperty Name="Margin" />
       <RootProperty Name="BorderBrush" />
@@ -82,8 +83,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Padding" />
       <RootProperty Name="Foreground" />
+      <RootProperty Name="Padding" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="InsTsinghua.Courses.MyUserControlAnc" />
@@ -107,7 +108,6 @@
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
       <RootProperty Name="States" />
     </RootType>
@@ -124,6 +124,7 @@
       <RootProperty Name="Value" />
       <RootProperty Name="Property" />
     </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
       <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
@@ -198,9 +199,6 @@
     <RootType FullName="InsTsinghua.Courses.Weblearn" />
     <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
       <RootProperty Name="Children" />
-      <RootProperty Name="Background" />
-      <RootMethod Name="GetRightOf" />
-      <RootMethod Name="SetRightOf" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Source" />

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Text.RegularExpressions;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Popups;
@@ -42,16 +43,31 @@ namespace InsTsinghua.Mails
             else
             try
             {
-                string username = DataAccess.getLocalSettings()["username"].ToString();
-                var vault = new Windows.Security.Credentials.PasswordVault();
+                    string username= DataAccess.getLocalSettings()["username"].ToString();
+                    var username1 = await DataAccess.getemailName();
+                    string usm = username1.Replace("\0","");
+                    
+                    var vault = new Windows.Security.Credentials.PasswordVault();
                 string password = vault.Retrieve("Tsinghua_Learn_Website", username).Password;
+                  
 
-                string js1 = "";
+                    string js5 = "document.getElementsByName('action:login')[0].click();";
+                    await Webemail.InvokeScriptAsync("eval", new string[] { js5 });
+
+                    string js1 = "";
                 js1 += $"document.getElementsByName('password')[0].setAttribute('value','{password}');";
                 await Webemail.InvokeScriptAsync("eval", new string[] { js1 });
-                string js2 = "document.getElementsByName('action:login')[0].click();";
+
+
+                    string js = "";
+                    js += $"var str=\"{usm}\";";
+                    js += $"document.getElementById('username').value=str";
+                    await Webemail.InvokeScriptAsync("eval", new string[] { js });
+
+                   string js2 = "document.getElementsByName('action:login')[0].click();";
                 await Webemail.InvokeScriptAsync("eval", new string[] { js2 });
 
+                  
                 Webemail.Visibility = Visibility.Visible;
                 Warning.Visibility = Visibility.Collapsed;
             }

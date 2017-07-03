@@ -8,9 +8,46 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="Loading...."></TextBlock>
-        <WebView x:ConnectionId='1' Name="NewsRoot" Source="http://news.tsinghua.edu.cn/publish/thunews/index.html" Canvas.ZIndex="100"                                                 ></WebView>
-        <Button x:ConnectionId='2' 
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:ConnectionId='1' x:Name="NarrowLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                        <AdaptiveTrigger MinWindowHeight="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                       
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:ConnectionId='2' x:Name="WideLayout">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TitleTextBlock.Margin" Value="5,2,0,2"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <!---->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Loading...." Grid.Row="1"></TextBlock>
+        <Grid Background="MediumPurple" Height="48">
+            <TextBlock x:ConnectionId='5' Name="TitleTextBlock"
+                      Grid.Row="0"
+                       FontSize="24"
+                        Margin="53,2,0,2"
+                       Text="新闻"
+                      VerticalAlignment="Center"
+                           Foreground="Black"   
+                       />
+        </Grid>
+        <WebView x:ConnectionId='3' Name="NewsRoot" Grid.Row="1" Source="http://news.tsinghua.edu.cn/publish/thunews/index.html" Canvas.ZIndex="100"                                                 ></WebView>
+        <Button x:ConnectionId='4' 
                     Name="BackButton" 
                      FontFamily="Segoe MDL2 Assets"
                     FontSize="24"

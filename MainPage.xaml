@@ -72,16 +72,13 @@
                         <AdaptiveTrigger MinWindowWidth="0"/>
                         <AdaptiveTrigger MinWindowHeight="0"/>
                     </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                     
+                    <VisualState.Setters>                    
                         <Setter Target="RootSplitView.CompactPaneLength" Value="0"/>
-
                     </VisualState.Setters>
                 </VisualState>
 
                 <VisualState x:Name="Highlayout">
                     <VisualState.StateTriggers>
-
                         <AdaptiveTrigger MinWindowHeight="400"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
@@ -90,7 +87,6 @@
 
                 <VisualState x:Name="Shortlayout">
                     <VisualState.StateTriggers>
-
                         <AdaptiveTrigger MinWindowHeight="0"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
@@ -110,7 +106,7 @@
         </VisualStateManager.VisualStateGroups>
         <!---->
 
-        <RelativePanel Background="MediumPurple" >
+       
             <Button Name="PaneOpenButton" 
                 FontFamily="Segoe MDL2 Assets" Content="&#xE700;" Foreground="White" 
                     FontSize="27"
@@ -119,16 +115,7 @@
                 VerticalAlignment="Top" Canvas.ZIndex="100"
                     />
 
-            <TextBlock Name="TitleTextBlock"
-                       RelativePanel.RightOf="PaneOpenButton"
-                       FontSize="24"
-                        Margin="12,8,0,2"
-                       Text="清华磁贴"
-                      VerticalAlignment="Center"
-                           Foreground="Black"                      
-                       />
-
-        </RelativePanel>
+ 
 
      <!--  <SplitView Grid.Row="1" 
                    Name="MySplitView"
@@ -240,40 +227,55 @@
             </SplitView.Content>
         </SplitView>
 -->
-        
-        
+
+
         <SplitView Name="RootSplitView" 
                    DisplayMode="CompactOverlay" 
                    CompactPaneLength="48" OpenPaneLength="180" 
                    IsPaneOpen="False"
-                    Grid.Row="1" >
+                    Grid.Row="0" Grid.RowSpan="2" 
+                  
+                   >
 
-            <SplitView.Pane>
-                <Grid Background="#FF7434A9" >
+            <SplitView.Pane >
+                <Grid  >
                     <Grid.RowDefinitions>
                         <!--空出Button的高度-->
-                        <RowDefinition Height="0" />
+                        <RowDefinition Height="48" />
                         <RowDefinition Height="*" />
-                        <RowDefinition Height="Auto" />
+
                     </Grid.RowDefinitions>
-                    <!--一级菜单-->
-                    <ListView Name="NavMenuPrimaryListView" 
-                              Grid.Row="1" VerticalAlignment="Top" 
+                    <Grid Background="MediumPurple" >
+                        
+                    </Grid>
+                    <Grid Grid.Row="1" Background="#FF7434A9">
+                        <Grid.RowDefinitions>
+                            <!--空出Button的高度-->
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <!--一级菜单-->
+                        <ListView Name="NavMenuPrimaryListView" 
+                              Grid.Row="0" VerticalAlignment="Top" 
                               SelectionMode="None" IsItemClickEnabled="True" 
                               ItemTemplate="{StaticResource DataTemplate}" 
                               ItemContainerStyle="{StaticResource NavMenuItemContainerStyle}"/>
-                    <!--二级菜单-->
-                    <ListView Name="NavMenuSecondaryListView" 
-                              Grid.Row="2" VerticalAlignment="Bottom" 
+                        <!--二级菜单-->
+                        <ListView Name="NavMenuSecondaryListView" 
+                              Grid.Row="1" VerticalAlignment="Bottom" 
                               SelectionMode="None" IsItemClickEnabled="True" 
                               ItemTemplate="{StaticResource DataTemplate}" 
                               ItemContainerStyle="{StaticResource NavMenuItemContainerStyle}" 
-                              BorderBrush="{ThemeResource SystemControlBackgroundAccentBrush}" BorderThickness="0,1,0,0" />
+                              BorderBrush="{ThemeResource SystemControlBackgroundAccentBrush}" BorderThickness="0,1,0,0" 
+                              />
+                    </Grid>
                 </Grid>
             </SplitView.Pane>
 
             <SplitView.Content>
-                <Frame Name="RootFrame" />
+
+                <Frame Name="RootFrame" Grid.Row="1"/>
+
             </SplitView.Content>
 
         </SplitView>

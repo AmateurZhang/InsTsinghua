@@ -8,9 +8,45 @@
     mc:Ignorable="d"
     Loaded="Oninitial"
     >
-    
-        
-        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup>
+                <VisualState x:Name="NarrowLayout0">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0"/>
+                        <AdaptiveTrigger MinWindowHeight="0"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                    </VisualState.Setters>
+                </VisualState>
+
+                <VisualState x:Name="WideLayout0">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="TitleTextBlock.Margin" Value="5,2,0,2"/>
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <!---->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Background="MediumPurple" Height="48">
+            <TextBlock Name="TitleTextBlock"
+                      Grid.Row="0"
+                       FontSize="24"
+                        Margin="53,2,0,2"
+                       Text="学堂"
+                      VerticalAlignment="Center"
+                           Foreground="Black"   
+                       />
+        </Grid>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Grid.Row="1">
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup>
                     <VisualState x:Name="NarrowLayout">
@@ -27,12 +63,14 @@
                             <Setter Target="Coursegd.(Grid.RowSpan)" Value="1"/>
                         </VisualState.Setters>
                     </VisualState>
+                 
+
                     <VisualState x:Name="WideLayout">
                         <VisualState.StateTriggers>
-                            <AdaptiveTrigger MinWindowWidth="500"/>
+                            <AdaptiveTrigger MinWindowWidth="700"/>
                         </VisualState.StateTriggers>
                         <VisualState.Setters>
-
+                         
                         </VisualState.Setters>
                     </VisualState>
                 </VisualStateGroup>
@@ -147,4 +185,6 @@
 
 
         </Grid>
+
+    </Grid>
 </Page>
