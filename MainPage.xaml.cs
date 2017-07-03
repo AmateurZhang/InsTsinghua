@@ -22,6 +22,7 @@ using InsTsinghua.Courses;
 using InsTsinghua.Mails;
 using InsTsinghua.Newss;
 using InsTsinghua.Welcomes;
+using Windows.UI.Core;
 
 //“空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409 上有介绍
 
@@ -121,7 +122,32 @@ namespace InsTsinghua
             NavMenuSecondaryListView.ItemClick += NavMenuListView_ItemClick;
             // 默认页
            
+
             RootFrame.SourcePageType = typeof(News);
+         //   SystemNavigationManager.GetForCurrentView().BackRequested += PageBackRequested;
+        }
+        private void PageBackRequested(object sender, BackRequestedEventArgs e)
+        {
+            if (RootFrame == null)
+                return;
+            if(RootFrame.CanGoBack)
+            {
+                e.Handled = true;
+                RootFrame.GoBack();
+               
+                  //  var index = NavMenuPrimaryListView.SelectedIndex;
+                 //   NavMenuItem item = navMenuPrimaryItem[index];
+                   // TitleTextBlock.Text = item.Label;
+               
+                try
+                {
+                    var index1 = NavMenuSecondaryListView.SelectedIndex;
+                    NavMenuItem item1 = navMenuSecondaryItem[index1];
+                    TitleTextBlock.Text = item1.Label;
+                }
+                catch { }
+
+            }
         }
         private void NavMenuListView_ItemClick(object sender, ItemClickEventArgs e)
         {

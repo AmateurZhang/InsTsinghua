@@ -28,13 +28,13 @@
     <AppXManifest Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-07-03T00:50:46.049</Modified>
+      <Modified>2017-07-03T01:22:08.778</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\InsTsinghua.exe">
       <PackagePath>entrypoint\InsTsinghua.exe</PackagePath>
-      <Modified>2017-07-03T00:50:44.797</Modified>
+      <Modified>2017-07-03T01:22:07.736</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\thuzh\.nuget\packages\HtmlAgilityPack\1.4.9.5\lib\NetCore45\HtmlAgilityPack.dll">
       <PackagePath>HtmlAgilityPack.dll</PackagePath>
@@ -756,11 +756,11 @@
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-07-03T00:25:15.736</Modified>
+      <Modified>2017-07-03T00:55:23.638</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Debug\Core\InsTsinghua.exe">
       <PackagePath>InsTsinghua.exe</PackagePath>
-      <Modified>2017-07-03T00:50:46.044</Modified>
+      <Modified>2017-07-03T01:22:08.774</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
