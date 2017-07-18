@@ -25,8 +25,8 @@ namespace InsTsinghua.TsinghuaTVs
     public sealed partial class TsinghuaTV : Page
     {
       
-        private ObservableCollection<TV1> TV1;
-        private List<TV1> TTT;
+        public ObservableCollection<TV1> TV1;
+        public List<TV1> TTT;
 
         // Create this variable at a global scope. Set it to null.
         private DisplayRequest appDisplayRequest = null;
@@ -36,12 +36,13 @@ namespace InsTsinghua.TsinghuaTVs
             this.InitializeComponent();
             TV1 = new ObservableCollection<TV1>();
             TTT = new List<TV1>();
+           
 
         }
 
         private void REFRESH_Click(object sender, RoutedEventArgs e)
         {
-            TTT = TVManager.GETTV("hd", TV1);
+            TTT = TVManager.GETTV("hd",true, TV1);
         }
 
         private void TVGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -49,13 +50,21 @@ namespace InsTsinghua.TsinghuaTVs
         {
             string Url
         = "https://iptv.tsinghua.edu.cn/player.html?vid=cctv1hd";
-            int tp = TVGrid.SelectedIndex;
-            if (InOut.IsOn)
-                Url = TTT[tp].URL;
-            else
-                Url = TTT[tp].URLS;
-            // Webview.Navigate(new Uri(Url));
-            MyMedias.Source = new Uri(Url);
+            try
+            {
+                int tp = TVGrid.SelectedIndex;
+                if (InOut.IsOn)
+                    Url = TTT[tp].URL;
+                else
+                    Url = TTT[tp].URLS;
+                // Webview.Navigate(new Uri(Url));
+                MyMedias.Source = new Uri(Url);
+            }
+            catch
+            {
+                
+            }
+           
         }
 
         private void MyMedias_CurrentStateChanged(object sender, RoutedEventArgs e)
@@ -84,5 +93,34 @@ namespace InsTsinghua.TsinghuaTVs
             }
 
         }
-    }
+
+
+
+        private void InOut_Toggled(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                ToggleSwitch toggleSwitch = sender as ToggleSwitch;
+                if (toggleSwitch != null)
+                {
+                    TVGrid.SelectedItem=null;
+                    MyMedias.Stop();
+                    MyMedias.Source = null;
+                    if (toggleSwitch.IsOn == true)
+                    {
+                        TTT = TVManager.GETTV("hd", true,TV1);
+                    }
+                    else if (toggleSwitch.IsOn == false)
+                    {
+                        TTT = TVManager.GETTV("hd", false,TV1);
+                    }
+                }
+            }
+            catch
+            {
+
+            }
+           
+        }
+        }
 }

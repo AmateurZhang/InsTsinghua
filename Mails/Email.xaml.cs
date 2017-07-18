@@ -46,8 +46,8 @@ namespace InsTsinghua.Mails
                 var vault = new Windows.Security.Credentials.PasswordVault();
                 string password = vault.Retrieve("Tsinghua_Learn_Website", username).Password;
                 string emailname = await DataAccess.getemailName();
-                    Webemail.Visibility = Visibility.Visible;
-                    Warning.Visibility = Visibility.Collapsed;
+                   // Webemail.Visibility = Visibility.Visible;
+                   // Warning.Visibility = Visibility.Collapsed;
 
                     string js1 = "";
                     js1 += $"document.getElementsByName('password')[0].setAttribute('value','{password}');";

@@ -1,87 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet type='text/xsl' href='C:\ProgramData\Windows App Certification Kit\results.xsl'?>
-<REPORT xml:lang="zh-CN" OVERALL_RESULT="PASS" VERSION="10.0.14393.33" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" APP_NAME="" APP_VERSION="" OSVERSION="10.0.14393.0" OS="Microsoft Windows 10 专业版" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="2052" VALIDATION_TYPE="UI" ReportGenerationTime="2017/6/26 0:14:42" ID="11d2680690dc98bd29f8a52eaaa03fce">
+<REPORT xml:lang="zh-CN" OVERALL_RESULT="PASS" VERSION="10.0.14393.33" LATEST_VERSION="TRUE" UPDATE_DOWNLOAD_URL="" TOOLSET_ARCHITECTURE="x64" SecureBoot="FALSE" APP_TYPE="UapApp" PUBLISHER_DISPLAY_NAME="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" APP_NAME="" APP_VERSION="" OSVERSION="10.0.15063.0" OS="Microsoft Windows 10 专业版" PER_USER_APPLICATION="" PARTIAL_RUN="FALSE" LCID="2052" VALIDATION_TYPE="UI" ReportGenerationTime="2017/7/17 19:36:03" ID="8dcd58f2bc64d20983d819049ef59959">
   <REQUIREMENTS>
     <REQUIREMENT NUMBER="10" TITLE="部署和启动测试" RATIONALE="应用程序故障(例如崩溃和挂起)是指给用户带来严重干扰并且产生挫折感。消除此类故障可提高应用程序的稳定性和可用性，进而从总体上为用户提供更好的应用程序体验。">
-      <TEST INDEX="50" NAME="字节码生成" DESCRIPTION="对于包含 HTML5 Windows 应用商店应用的包，字节码生成应能够成功完成。" EXECUTIONTIME="00h:00m:01s.00ms">
+      <TEST INDEX="50" NAME="字节码生成" DESCRIPTION="对于包含 HTML5 Windows 应用商店应用的包，字节码生成应能够成功完成。" EXECUTIONTIME="00h:00m:01s.01ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="79" NAME="后台任务取消处理程序" DESCRIPTION="应用应当实施事件处理程序来处理后台任务取消请求。" EXECUTIONTIME="00h:00m:20s.55ms">
+      <TEST INDEX="79" NAME="后台任务取消处理程序" DESCRIPTION="应用应当实施事件处理程序来处理后台任务取消请求。" EXECUTIONTIME="00h:00m:24s.21ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="81" NAME="平台版本启动" DESCRIPTION="应用不应误用 OSVersionInfo API 来提供特定于该 OS 的用户功能。" EXECUTIONTIME="00h:00m:17s.99ms">
+      <TEST INDEX="81" NAME="平台版本启动" DESCRIPTION="应用不应误用 OSVersionInfo API 来提供特定于该 OS 的用户功能。" EXECUTIONTIME="00h:00m:18s.25ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="47" NAME="应用启动" DESCRIPTION="应用启动测试。" EXECUTIONTIME="00h:00m:17s.92ms">
+      <TEST INDEX="47" NAME="应用启动" DESCRIPTION="应用启动测试。" EXECUTIONTIME="00h:00m:18s.15ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="80" NAME="应用预启动" DESCRIPTION="应用应当通过应用预启动验证。" EXECUTIONTIME="00h:00m:57s.10ms">
+      <TEST INDEX="80" NAME="应用预启动" DESCRIPTION="应用应当通过应用预启动验证。" EXECUTIONTIME="00h:00m:57s.53ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="21" NAME="崩溃或挂起" DESCRIPTION="测试过程中不崩溃或挂起。" EXECUTIONTIME="00h:00m:03s.20ms">
+      <TEST INDEX="21" NAME="崩溃或挂起" DESCRIPTION="测试过程中不崩溃或挂起。" EXECUTIONTIME="00h:00m:02s.72ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="12" TITLE="包合规性测试" RATIONALE="包清单缺少一个或多个必需的属性。">
-      <TEST INDEX="77" NAME="应用程序计数" DESCRIPTION="一个包不应定义清单中的多个应用。" EXECUTIONTIME="00h:00m:00s.95ms">
+      <TEST INDEX="77" NAME="应用程序计数" DESCRIPTION="一个包不应定义清单中的多个应用。" EXECUTIONTIME="00h:00m:00s.99ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="31" NAME="应用清单" DESCRIPTION="应用部件清单(manifest)必须包括所有必填字段的有效条目。" EXECUTIONTIME="00h:00m:01s.05ms">
+      <TEST INDEX="31" NAME="应用清单" DESCRIPTION="应用部件清单(manifest)必须包括所有必填字段的有效条目。" EXECUTIONTIME="00h:00m:01s.09ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="74" NAME="捆绑包清单" DESCRIPTION="捆绑包清单必须包括所有必填字段的有效条目。" EXECUTIONTIME="00h:00m:01s.26ms">
+      <TEST INDEX="74" NAME="捆绑包清单" DESCRIPTION="捆绑包清单必须包括所有必填字段的有效条目。" EXECUTIONTIME="00h:00m:01s.04ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="75" NAME="包大小" DESCRIPTION="包文件大小不应大于 4 GB。" EXECUTIONTIME="00h:00m:01s.00ms">
+      <TEST INDEX="75" NAME="包大小" DESCRIPTION="包文件大小不应大于 4 GB。" EXECUTIONTIME="00h:00m:01s.05ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="83" NAME="受限命名空间" DESCRIPTION="检查 appx 清单中是否引用了任何受限命名空间。" EXECUTIONTIME="00h:00m:01s.16ms">
+      <TEST INDEX="83" NAME="受限命名空间" DESCRIPTION="检查 appx 清单中是否引用了任何受限命名空间。" EXECUTIONTIME="00h:00m:01s.12ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="14" TITLE="Windows 安全功能测试" RATIONALE="应用程序必须选择启用 Windows 安全功能。">
-      <TEST INDEX="33" NAME="二进制分析器" DESCRIPTION="分析二进制文件启用的安全功能" EXECUTIONTIME="00h:00m:01s.50ms">
+      <TEST INDEX="33" NAME="二进制分析器" DESCRIPTION="分析二进制文件启用的安全功能" EXECUTIONTIME="00h:00m:01s.57ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="70" NAME="禁止文件分析器" DESCRIPTION="用于检测已知的不安全文件的应用程序分析" EXECUTIONTIME="00h:00m:00s.81ms">
+      <TEST INDEX="70" NAME="禁止文件分析器" DESCRIPTION="用于检测已知的不安全文件的应用程序分析" EXECUTIONTIME="00h:00m:00s.83ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="62" NAME="私有代码签名" DESCRIPTION="应用不应对私有代码签名密钥文件进行打包。" EXECUTIONTIME="00h:00m:01s.15ms">
+      <TEST INDEX="62" NAME="私有代码签名" DESCRIPTION="应用不应对私有代码签名密钥文件进行打包。" EXECUTIONTIME="00h:00m:01s.14ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="15" TITLE="支持的 API 测试" RATIONALE="应用程序只应引用 Windows SDK 允许 Windows 应用商店应用使用的 API。">
-      <TEST INDEX="38" NAME="支持的 API" DESCRIPTION="Windows 应用商店应用只能使用支持的平台 API。" EXECUTIONTIME="00h:00m:03s.69ms">
+      <TEST INDEX="38" NAME="支持的 API" DESCRIPTION="Windows 应用商店应用只能使用支持的平台 API。" EXECUTIONTIME="00h:00m:02s.50ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="19" TITLE="应用清单资源测试" RATIONALE="按照应用打包规范和应用部件清单(manifest)架构的规定，应用包清单应在 resources.pri 文件中定义有效的资源。">
-      <TEST INDEX="45" NAME="应用资源" DESCRIPTION="包应该在 resources.pri 文件中定义有效资源。" EXECUTIONTIME="00h:00m:00s.74ms">
+      <TEST INDEX="45" NAME="应用资源" DESCRIPTION="包应该在 resources.pri 文件中定义有效资源。" EXECUTIONTIME="00h:00m:00s.72ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="61" NAME="品牌" DESCRIPTION="应用不应使用 Windows SDK 示例或 Visual Studio 打包的默认映像。" EXECUTIONTIME="00h:00m:01s.77ms">
+      <TEST INDEX="61" NAME="品牌" DESCRIPTION="应用不应使用 Windows SDK 示例或 Visual Studio 打包的默认映像。" EXECUTIONTIME="00h:00m:01s.84ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="20" TITLE="调试配置测试" RATIONALE="应用不应该安装任何调试二进制文件。">
-      <TEST INDEX="46" NAME="调试配置" DESCRIPTION="应用不应该安装任何调试二进制文件。" EXECUTIONTIME="00h:00m:01s.13ms">
+      <TEST INDEX="46" NAME="调试配置" DESCRIPTION="应用不应该安装任何调试二进制文件。" EXECUTIONTIME="00h:00m:01s.07ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -93,49 +93,49 @@
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="23" TITLE="应用功能测试" RATIONALE="在服务过程中，声明特殊用途功能的程序包必须提供论证。">
-      <TEST INDEX="52" NAME="特殊用途功能" DESCRIPTION="在服务过程中，声明特殊用途功能的程序包必须提供论证。" EXECUTIONTIME="00h:00m:01s.09ms">
+      <TEST INDEX="52" NAME="特殊用途功能" DESCRIPTION="在服务过程中，声明特殊用途功能的程序包必须提供论证。" EXECUTIONTIME="00h:00m:01s.11ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="24" TITLE="Windows 运行时元数据验证" RATIONALE="在所有的生成源中，元数据需要保持一致。">
-      <TEST INDEX="56" NAME="ExclusiveTo 属性" DESCRIPTION="一个类不能实现标记了 ExclusiveTo 另一个类的接口。" EXECUTIONTIME="00h:00m:26s.04ms">
+      <TEST INDEX="56" NAME="ExclusiveTo 属性" DESCRIPTION="一个类不能实现标记了 ExclusiveTo 另一个类的接口。" EXECUTIONTIME="00h:00m:10s.12ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="57" NAME="类型位置" DESCRIPTION="必须使用最长的匹配名称空间在元数据文件中定义类型。" EXECUTIONTIME="00h:00m:01s.26ms">
+      <TEST INDEX="57" NAME="类型位置" DESCRIPTION="必须使用最长的匹配名称空间在元数据文件中定义类型。" EXECUTIONTIME="00h:00m:01s.09ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="55" NAME="类型名称区分大小写" DESCRIPTION="名称空间和类型名称不得只有大小写区别。" EXECUTIONTIME="00h:00m:00s.85ms">
+      <TEST INDEX="55" NAME="类型名称区分大小写" DESCRIPTION="名称空间和类型名称不得只有大小写区别。" EXECUTIONTIME="00h:00m:01s.06ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="54" NAME="类型名称正确性" DESCRIPTION="Windows 名称空间中只能包含系统类型，全局名称空间中不得包含类型。" EXECUTIONTIME="00h:00m:00s.84ms">
+      <TEST INDEX="54" NAME="类型名称正确性" DESCRIPTION="Windows 名称空间中只能包含系统类型，全局名称空间中不得包含类型。" EXECUTIONTIME="00h:00m:01s.06ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="58" NAME="一般元数据正确性" DESCRIPTION="元数据文件必须满足各种要求才是有效且正确的。" EXECUTIONTIME="00h:00m:20s.35ms">
+      <TEST INDEX="58" NAME="一般元数据正确性" DESCRIPTION="元数据文件必须满足各种要求才是有效且正确的。" EXECUTIONTIME="00h:00m:10s.12ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="53" NAME="属性" DESCRIPTION="不得使用只写和索引器属性。对应的 getter 和 setter 方法类型必须匹配。" EXECUTIONTIME="00h:00m:00s.86ms">
+      <TEST INDEX="53" NAME="属性" DESCRIPTION="不得使用只写和索引器属性。对应的 getter 和 setter 方法类型必须匹配。" EXECUTIONTIME="00h:00m:01s.12ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="25" TITLE="程序包健全性测试" RATIONALE="验证应用包内容以确保正确性。">
-      <TEST INDEX="63" NAME="平台的相应文件" DESCRIPTION="应用不应安装不符合目标处理器体系结构的文件。" EXECUTIONTIME="00h:00m:01s.02ms">
+      <TEST INDEX="63" NAME="平台的相应文件" DESCRIPTION="应用不应安装不符合目标处理器体系结构的文件。" EXECUTIONTIME="00h:00m:01s.00ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
-      <TEST INDEX="66" NAME="支持的目录结构检查" DESCRIPTION="验证程序包中的各个文件，确保文件名长度应短于 MAX_PATH。" EXECUTIONTIME="00h:00m:00s.94ms">
+      <TEST INDEX="66" NAME="支持的目录结构检查" DESCRIPTION="验证程序包中的各个文件，确保文件名长度应短于 MAX_PATH。" EXECUTIONTIME="00h:00m:01s.01ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
     </REQUIREMENT>
     <REQUIREMENT NUMBER="27" TITLE="资源使用情况测试" RATIONALE="WinJS 后台任务需要调用 close()以释放资源。">
-      <TEST INDEX="68" NAME="WinJS 后台任务" DESCRIPTION="WinJS 后台任务需要调用 close()以释放资源。" EXECUTIONTIME="00h:00m:01s.28ms">
+      <TEST INDEX="68" NAME="WinJS 后台任务" DESCRIPTION="WinJS 后台任务需要调用 close()以释放资源。" EXECUTIONTIME="00h:00m:01s.06ms">
         <MESSAGES />
         <RESULT><![CDATA[PASS]]></RESULT>
       </TEST>
@@ -143,12 +143,12 @@
   </REQUIREMENTS>
   <APPLICATIONS>
     <Installed_Programs>
-      <Program Name="51420AmateurZhang.InsTsinghua" Type="Application" Source="AppxPackage" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.4.0" Language="1033" InstallDate="06/25/2017 16:11:31" OSVersionAtInstallTime="10.0.0.14393" RootDirPath="c:\program files\windowsapps\51420amateurzhang.instsinghua_1.1.4.0_x64__8fqwwq4hevbq8" Id="0000ac24a6040ea8eb5971696f857dfb95bc00000904">
+      <Program Name="51420AmateurZhang.InsTsinghua" Type="Application" Source="AppxPackage" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.7.0" Language="1033" InstallDate="07/17/2017 11:33:17" OSVersionAtInstallTime="10.0.0.15063" RootDirPath="c:\program files\windowsapps\51420amateurzhang.instsinghua_1.1.7.0_x64__8fqwwq4hevbq8" Id="00007117f7af2a9783088513eed24c37321900000904">
         <Indicators>
           <WindowsStoreAppManifestIndicators>
-            <PackageManifest PackageFullName="51420AmateurZhang.InsTsinghua_1.1.4.0_x64__8fqwwq4hevbq8">
+            <PackageManifest PackageFullName="51420AmateurZhang.InsTsinghua_1.1.7.0_x64__8fqwwq4hevbq8">
               <Package>
-                <Identity Name="51420AmateurZhang.InsTsinghua" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.4.0" ProcessorArchitecture="x64" />
+                <Identity Name="51420AmateurZhang.InsTsinghua" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.7.0" ProcessorArchitecture="x64" />
                 <PhoneIdentity PhoneProductId="39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
                 <Properties>
                   <DisplayName>InsTsinghua</DisplayName>
@@ -205,42 +205,42 @@
             </PackageManifest>
             <BundleManifest PackageFamilyName="51420AmateurZhang.InsTsinghua_8fqwwq4hevbq8">
               <Bundle SchemaVersion="2.0">
-                <Identity Name="51420AmateurZhang.InsTsinghua" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.4.0" />
+                <Identity Name="51420AmateurZhang.InsTsinghua" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.7.0" />
                 <Packages>
-                  <Package Type="application" Version="1.1.4.0" Architecture="x86" FileName="InsTsinghua_1.1.4.0_x86.appx" Offset="6294388" Size="2725509">
+                  <Package Type="application" Version="1.1.7.0" Architecture="x86" FileName="InsTsinghua_1.1.7.0_x86.appx" Offset="6301553" Size="2728230">
                     <Resources>
                       <Resource Language="ZH-CN" />
                       <Resource Scale="200" />
                     </Resources>
                   </Package>
-                  <Package Type="application" Version="1.1.4.0" Architecture="x64" FileName="InsTsinghua_1.1.4.0_x64.appx" Offset="3446157" Size="2848149">
+                  <Package Type="application" Version="1.1.7.0" Architecture="x64" FileName="InsTsinghua_1.1.7.0_x64.appx" Offset="3449466" Size="2852005">
                     <Resources>
                       <Resource Language="ZH-CN" />
                       <Resource Scale="200" />
                     </Resources>
                   </Package>
-                  <Package Type="application" Version="1.1.4.0" Architecture="arm" FileName="InsTsinghua_1.1.4.0_ARM.appx" Offset="58" Size="2776551">
+                  <Package Type="application" Version="1.1.7.0" Architecture="arm" FileName="InsTsinghua_1.1.7.0_ARM.appx" Offset="58" Size="2779851">
                     <Resources>
                       <Resource Language="ZH-CN" />
                       <Resource Scale="200" />
                     </Resources>
                   </Package>
-                  <Package Type="resource" Version="1.1.4.0" ResourceId="split.scale-100" FileName="InsTsinghua_1.1.4.0_scale-100.appx" Offset="2776697" Size="76449">
+                  <Package Type="resource" Version="1.1.7.0" ResourceId="split.scale-100" FileName="InsTsinghua_1.1.7.0_scale-100.appx" Offset="2779997" Size="76457">
                     <Resources>
                       <Resource Scale="100" />
                     </Resources>
                   </Package>
-                  <Package Type="resource" Version="1.1.4.0" ResourceId="split.scale-125" FileName="InsTsinghua_1.1.4.0_scale-125.appx" Offset="2853234" Size="121892">
+                  <Package Type="resource" Version="1.1.7.0" ResourceId="split.scale-125" FileName="InsTsinghua_1.1.7.0_scale-125.appx" Offset="2856542" Size="121894">
                     <Resources>
                       <Resource Scale="125" />
                     </Resources>
                   </Package>
-                  <Package Type="resource" Version="1.1.4.0" ResourceId="split.scale-150" FileName="InsTsinghua_1.1.4.0_scale-150.appx" Offset="2975214" Size="142643">
+                  <Package Type="resource" Version="1.1.7.0" ResourceId="split.scale-150" FileName="InsTsinghua_1.1.7.0_scale-150.appx" Offset="2978524" Size="142642">
                     <Resources>
                       <Resource Scale="150" />
                     </Resources>
                   </Package>
-                  <Package Type="resource" Version="1.1.4.0" ResourceId="split.scale-400" FileName="InsTsinghua_1.1.4.0_scale-400.appx" Offset="3117945" Size="328130">
+                  <Package Type="resource" Version="1.1.7.0" ResourceId="split.scale-400" FileName="InsTsinghua_1.1.7.0_scale-400.appx" Offset="3121254" Size="328130">
                     <Resources>
                       <Resource Scale="400" />
                     </Resources>
@@ -257,168 +257,8 @@
     </Installed_Programs>
   </APPLICATIONS>
   <DEPENDENCY_INFORMATION>
-    <AitStaticAnalysis ProgramId="0000ac24a6040ea8eb5971696f857dfb95bc00000904" AnalysisVersion="1.60" DictionaryVersion="3.1" Type="Package" Id="51420AmateurZhang.InsTsinghua_1.1.4.0_x64__8fqwwq4hevbq8">
-      <AitFile ErrorCode="0" Name="ClrCompression.dll" Id="00003e0ead7458e4ad4ec0ca220a18be2728eae6ea20">
-        <AitCategory Id="ApiStatic">
-          <AitFeature Name="api-ms-win-core-profile-l1-1-0.dll!QueryPerformanceCounter" />
-          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemAlloc" />
-          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemFree" />
-          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetSystemTimeAsFileTime" />
-          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetTickCount64" />
-          <AitFeature Name="api-ms-win-core-libraryloader-l1-1-0.dll!DisableThreadLibraryCalls" />
-          <AitFeature Name="api-ms-win-core-processthreads-l1-1-0.dll!GetCurrentThreadId" />
-        </AitCategory>
-      </AitFile>
-      <AitFile ErrorCode="0" Name="BackgroundTasks.winmd" Id="0000cb60b7582442fdd9786803a4058bfeffbef017d9">
-        <AitCategory Id="DotNet">
-          <AitFeature Name="System.Collections.Generic.IDictionary`2" />
-          <AitFeature Name="System.Collections.Generic.IDictionary`2.get_Item" />
-          <AitFeature Name="System.Collections.Generic.IEnumerable`1" />
-          <AitFeature Name="System.Collections.Generic.IEnumerable`1.GetEnumerator" />
-          <AitFeature Name="System.Collections.Generic.IEnumerator`1" />
-          <AitFeature Name="System.Collections.Generic.IEnumerator`1.get_Current" />
-          <AitFeature Name="System.Collections.Generic.IReadOnlyDictionary`2" />
-          <AitFeature Name="System.Collections.Generic.KeyValuePair`2" />
-          <AitFeature Name="System.Collections.Generic.KeyValuePair`2.get_Value" />
-          <AitFeature Name="System.Collections.Generic.List`1" />
-          <AitFeature Name="System.Collections.IEnumerator" />
-          <AitFeature Name="System.Collections.IEnumerator.MoveNext" />
-          <AitFeature Name="System.DateTime" />
-          <AitFeature Name="System.DateTime.Parse" />
-          <AitFeature Name="System.DateTime.ToString" />
-          <AitFeature Name="System.DateTime.get_Now" />
-          <AitFeature Name="System.DateTime.op_Subtraction" />
-          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
-          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute" />
-          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute..ctor" />
-          <AitFeature Name="System.Double" />
-          <AitFeature Name="System.Double.Parse" />
-          <AitFeature Name="System.Exception" />
-          <AitFeature Name="System.Exception..ctor" />
-          <AitFeature Name="System.Guid" />
-          <AitFeature Name="System.IDisposable" />
-          <AitFeature Name="System.IDisposable.Dispose" />
-          <AitFeature Name="System.Int32" />
-          <AitFeature Name="System.Net.NetworkInformation.NetworkInterface" />
-          <AitFeature Name="System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable" />
-          <AitFeature Name="System.Object" />
-          <AitFeature Name="System.Object..ctor" />
-          <AitFeature Name="System.Object.ToString" />
-          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
-          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
-          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AwaitUnsafeOnCompleted" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.Create" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetException" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.Start" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.get_Task" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext" />
-          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine" />
-          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
-          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
-          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter`1" />
-          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter`1.GetResult" />
-          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter`1.get_IsCompleted" />
-          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
-          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
-          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
-          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
-          <AitFeature Name="System.String" />
-          <AitFeature Name="System.String.op_Equality" />
-          <AitFeature Name="System.Threading.Tasks.Task`1" />
-          <AitFeature Name="System.Threading.Tasks.Task`1.GetAwaiter" />
-          <AitFeature Name="System.TimeSpan" />
-          <AitFeature Name="System.TimeSpan.get_TotalHours" />
-          <AitFeature Name="System.Type" />
-          <AitFeature Name="System.ValueType" />
-          <AitFeature Name="System.WindowsRuntimeSystemExtensions" />
-          <AitFeature Name="System.WindowsRuntimeSystemExtensions.GetAwaiter" />
-        </AitCategory>
-        <AitCategory Id="DotNetWinRt">
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundAccessStatus" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundExecutionManager" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundExecutionManager.RequestAccessAsync" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder..ctor" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder.AddCondition" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTrigger" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder.put_Name" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder.put_TaskEntryPoint" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskDeferral" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskDeferral.Complete" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskRegistration" />
-          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskRegistration.get_AllTasks" />
-          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundCondition" />
-          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTask" />
-          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTask.Run" />
-          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTaskInstance" />
-          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTaskInstance.GetDeferral" />
-          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTaskRegistration" />
-          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTaskRegistration.Unregister" />
-          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTaskRegistration.get_Name" />
-          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTrigger" />
-          <AitFeature Name="Windows.ApplicationModel.Background.SystemCondition" />
-          <AitFeature Name="Windows.ApplicationModel.Background.SystemCondition..ctor" />
-          <AitFeature Name="Windows.ApplicationModel.Background.SystemConditionType" />
-          <AitFeature Name="Windows.ApplicationModel.Background.TimeTrigger" />
-          <AitFeature Name="Windows.ApplicationModel.Background.TimeTrigger..ctor" />
-          <AitFeature Name="Windows.Foundation.Collections.IPropertySet" />
-          <AitFeature Name="Windows.Foundation.IAsyncOperation`1" />
-          <AitFeature Name="Windows.Foundation.IStringable" />
-          <AitFeature Name="Windows.Foundation.IStringable.ToString" />
-          <AitFeature Name="Windows.Foundation.Metadata.ActivatableAttribute" />
-          <AitFeature Name="Windows.Foundation.Metadata.ActivatableAttribute..ctor" />
-          <AitFeature Name="Windows.Foundation.Metadata.DefaultAttribute" />
-          <AitFeature Name="Windows.Foundation.Metadata.DefaultAttribute..ctor" />
-          <AitFeature Name="Windows.Foundation.Metadata.ExclusiveToAttribute" />
-          <AitFeature Name="Windows.Foundation.Metadata.ExclusiveToAttribute..ctor" />
-          <AitFeature Name="Windows.Foundation.Metadata.GuidAttribute" />
-          <AitFeature Name="Windows.Foundation.Metadata.GuidAttribute..ctor" />
-          <AitFeature Name="Windows.Foundation.Metadata.MarshalingBehaviorAttribute" />
-          <AitFeature Name="Windows.Foundation.Metadata.MarshalingBehaviorAttribute..ctor" />
-          <AitFeature Name="Windows.Foundation.Metadata.MarshalingType" />
-          <AitFeature Name="Windows.Foundation.Metadata.StaticAttribute" />
-          <AitFeature Name="Windows.Foundation.Metadata.StaticAttribute..ctor" />
-          <AitFeature Name="Windows.Foundation.Metadata.ThreadingAttribute" />
-          <AitFeature Name="Windows.Foundation.Metadata.ThreadingAttribute..ctor" />
-          <AitFeature Name="Windows.Foundation.Metadata.ThreadingModel" />
-          <AitFeature Name="Windows.Foundation.Metadata.VersionAttribute" />
-          <AitFeature Name="Windows.Foundation.Metadata.VersionAttribute..ctor" />
-        </AitCategory>
-      </AitFile>
-      <AitFile ErrorCode="0" Name="InsTsinghua.dll" Id="0000dd334e8c1f1f1338f293280b4d04bbc6263e6730">
+    <AitStaticAnalysis ProgramId="00007117f7af2a9783088513eed24c37321900000904" AnalysisVersion="1.60" DictionaryVersion="3.1" Type="Package" Id="51420AmateurZhang.InsTsinghua_1.1.7.0_x64__8fqwwq4hevbq8">
+      <AitFile ErrorCode="0" Name="InsTsinghua.dll" Id="0000178e645be1ed97b253dcfddbf01ba955c61c4a89">
         <AitCategory Id="Com">
           <AitFeature Name="{00000000-0000-0000-0000-000000000001}" />
           <AitFeature Name="{00000003-0000-0000-c000-000000000046}" />
@@ -1249,7 +1089,167 @@
           <AitFeature Name="Windows.Security.Cryptography.Certificates.CertificateQuery" />
         </AitCategory>
       </AitFile>
-      <AitFile ErrorCode="0" Name="InsTsinghua.exe" Id="0000fe6776c81a2deee9dbc5df8907b712d0163a72f6" />
+      <AitFile ErrorCode="0" Name="ClrCompression.dll" Id="00003e0ead7458e4ad4ec0ca220a18be2728eae6ea20">
+        <AitCategory Id="ApiStatic">
+          <AitFeature Name="api-ms-win-core-profile-l1-1-0.dll!QueryPerformanceCounter" />
+          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemAlloc" />
+          <AitFeature Name="api-ms-win-core-com-l1-1-0.dll!CoTaskMemFree" />
+          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetSystemTimeAsFileTime" />
+          <AitFeature Name="api-ms-win-core-sysinfo-l1-1-0.dll!GetTickCount64" />
+          <AitFeature Name="api-ms-win-core-libraryloader-l1-1-0.dll!DisableThreadLibraryCalls" />
+          <AitFeature Name="api-ms-win-core-processthreads-l1-1-0.dll!GetCurrentThreadId" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="BackgroundTasks.winmd" Id="0000b085ca623a310d74cdb11d2c542548cb73efb0ea">
+        <AitCategory Id="DotNet">
+          <AitFeature Name="System.Collections.Generic.IDictionary`2" />
+          <AitFeature Name="System.Collections.Generic.IDictionary`2.get_Item" />
+          <AitFeature Name="System.Collections.Generic.IEnumerable`1" />
+          <AitFeature Name="System.Collections.Generic.IEnumerable`1.GetEnumerator" />
+          <AitFeature Name="System.Collections.Generic.IEnumerator`1" />
+          <AitFeature Name="System.Collections.Generic.IEnumerator`1.get_Current" />
+          <AitFeature Name="System.Collections.Generic.IReadOnlyDictionary`2" />
+          <AitFeature Name="System.Collections.Generic.KeyValuePair`2" />
+          <AitFeature Name="System.Collections.Generic.KeyValuePair`2.get_Value" />
+          <AitFeature Name="System.Collections.Generic.List`1" />
+          <AitFeature Name="System.Collections.IEnumerator" />
+          <AitFeature Name="System.Collections.IEnumerator.MoveNext" />
+          <AitFeature Name="System.DateTime" />
+          <AitFeature Name="System.DateTime.Parse" />
+          <AitFeature Name="System.DateTime.ToString" />
+          <AitFeature Name="System.DateTime.get_Now" />
+          <AitFeature Name="System.DateTime.op_Subtraction" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggableAttribute..ctor" />
+          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute" />
+          <AitFeature Name="System.Diagnostics.DebuggerHiddenAttribute..ctor" />
+          <AitFeature Name="System.Double" />
+          <AitFeature Name="System.Double.Parse" />
+          <AitFeature Name="System.Exception" />
+          <AitFeature Name="System.Exception..ctor" />
+          <AitFeature Name="System.Guid" />
+          <AitFeature Name="System.IDisposable" />
+          <AitFeature Name="System.IDisposable.Dispose" />
+          <AitFeature Name="System.Int32" />
+          <AitFeature Name="System.Net.NetworkInformation.NetworkInterface" />
+          <AitFeature Name="System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable" />
+          <AitFeature Name="System.Object" />
+          <AitFeature Name="System.Object..ctor" />
+          <AitFeature Name="System.Object.ToString" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCompanyAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyConfigurationAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyCopyrightAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyDescriptionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyFileVersionAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyProductAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTitleAttribute..ctor" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute" />
+          <AitFeature Name="System.Reflection.AssemblyTrademarkAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncStateMachineAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.AwaitUnsafeOnCompleted" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.Create" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetException" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetResult" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.SetStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.Start" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncTaskMethodBuilder`1.get_Task" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.AwaitUnsafeOnCompleted" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Create" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetException" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetResult" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.SetStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.AsyncVoidMethodBuilder.Start" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilationRelaxationsAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.CompilerGeneratedAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.MoveNext" />
+          <AitFeature Name="System.Runtime.CompilerServices.IAsyncStateMachine.SetStateMachine" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute" />
+          <AitFeature Name="System.Runtime.CompilerServices.RuntimeCompatibilityAttribute..ctor" />
+          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter`1" />
+          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter`1.GetResult" />
+          <AitFeature Name="System.Runtime.CompilerServices.TaskAwaiter`1.get_IsCompleted" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute" />
+          <AitFeature Name="System.Runtime.InteropServices.ComVisibleAttribute..ctor" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute" />
+          <AitFeature Name="System.Runtime.Versioning.TargetFrameworkAttribute..ctor" />
+          <AitFeature Name="System.String" />
+          <AitFeature Name="System.String.op_Equality" />
+          <AitFeature Name="System.Threading.Tasks.Task`1" />
+          <AitFeature Name="System.Threading.Tasks.Task`1.GetAwaiter" />
+          <AitFeature Name="System.TimeSpan" />
+          <AitFeature Name="System.TimeSpan.get_TotalHours" />
+          <AitFeature Name="System.Type" />
+          <AitFeature Name="System.ValueType" />
+          <AitFeature Name="System.WindowsRuntimeSystemExtensions" />
+          <AitFeature Name="System.WindowsRuntimeSystemExtensions.GetAwaiter" />
+        </AitCategory>
+        <AitCategory Id="DotNetWinRt">
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundAccessStatus" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundExecutionManager" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundExecutionManager.RequestAccessAsync" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder..ctor" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder.AddCondition" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder.Register" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder.SetTrigger" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder.put_Name" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskBuilder.put_TaskEntryPoint" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskDeferral" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskDeferral.Complete" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskRegistration" />
+          <AitFeature Name="Windows.ApplicationModel.Background.BackgroundTaskRegistration.get_AllTasks" />
+          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundCondition" />
+          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTask" />
+          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTask.Run" />
+          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTaskInstance" />
+          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTaskInstance.GetDeferral" />
+          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTaskRegistration" />
+          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTaskRegistration.Unregister" />
+          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTaskRegistration.get_Name" />
+          <AitFeature Name="Windows.ApplicationModel.Background.IBackgroundTrigger" />
+          <AitFeature Name="Windows.ApplicationModel.Background.SystemCondition" />
+          <AitFeature Name="Windows.ApplicationModel.Background.SystemCondition..ctor" />
+          <AitFeature Name="Windows.ApplicationModel.Background.SystemConditionType" />
+          <AitFeature Name="Windows.ApplicationModel.Background.TimeTrigger" />
+          <AitFeature Name="Windows.ApplicationModel.Background.TimeTrigger..ctor" />
+          <AitFeature Name="Windows.Foundation.Collections.IPropertySet" />
+          <AitFeature Name="Windows.Foundation.IAsyncOperation`1" />
+          <AitFeature Name="Windows.Foundation.IStringable" />
+          <AitFeature Name="Windows.Foundation.IStringable.ToString" />
+          <AitFeature Name="Windows.Foundation.Metadata.ActivatableAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.ActivatableAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.DefaultAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.DefaultAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.ExclusiveToAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.ExclusiveToAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.GuidAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.GuidAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.MarshalingBehaviorAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.MarshalingBehaviorAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.MarshalingType" />
+          <AitFeature Name="Windows.Foundation.Metadata.StaticAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.StaticAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.ThreadingAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.ThreadingAttribute..ctor" />
+          <AitFeature Name="Windows.Foundation.Metadata.ThreadingModel" />
+          <AitFeature Name="Windows.Foundation.Metadata.VersionAttribute" />
+          <AitFeature Name="Windows.Foundation.Metadata.VersionAttribute..ctor" />
+        </AitCategory>
+      </AitFile>
+      <AitFile ErrorCode="0" Name="InsTsinghua.exe" Id="0000d08dd7d19f6f6f9b12ca915a6ad8f63f4ba46056" />
     </AitStaticAnalysis>
   </DEPENDENCY_INFORMATION>
 </REPORT>

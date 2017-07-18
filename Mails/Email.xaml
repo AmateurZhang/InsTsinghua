@@ -19,9 +19,8 @@
                 <Button.Flyout>
                     <Flyout Placement="Top">
                         <Grid>
-                            <TextBlock TextWrapping="Wrap" Margin="2"> 联网状态下，初次进入清华邮箱界面，<LineBreak/>
-                                只需填写邮箱无后缀用户名，再次可一键登录<LineBreak/>
-                                如需要修改用户，请在清华邮箱内部点击退出。
+                            <TextBlock TextWrapping="Wrap" Margin="2"> 在此版本中，我们会自动获取您的用户名，<LineBreak/>
+                                即可一键登录清华邮箱。
                             </TextBlock>
                         </Grid>
                     </Flyout>

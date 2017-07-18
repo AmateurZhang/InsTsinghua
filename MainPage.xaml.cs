@@ -124,28 +124,19 @@ namespace InsTsinghua
            
 
             RootFrame.SourcePageType = typeof(News);
-         //   SystemNavigationManager.GetForCurrentView().BackRequested += PageBackRequested;
+         //  SystemNavigationManager.GetForCurrentView().BackRequested += PageBackRequested;
         }
+
+        public Frame AppFrame { get { return this.Frame; } }
         private void PageBackRequested(object sender, BackRequestedEventArgs e)
         {
-            if (RootFrame == null)
+            if (this.AppFrame== null)
                 return;
-            if(RootFrame.CanGoBack)
+            if(this.AppFrame.CanGoBack )
             {
                 e.Handled = true;
-                RootFrame.GoBack();
+                this.AppFrame.GoBack();
                
-                  //  var index = NavMenuPrimaryListView.SelectedIndex;
-                 //   NavMenuItem item = navMenuPrimaryItem[index];
-                   // TitleTextBlock.Text = item.Label;
-               
-                try
-                {
-                    var index1 = NavMenuSecondaryListView.SelectedIndex;
-                    NavMenuItem item1 = navMenuSecondaryItem[index1];
-                    TitleTextBlock.Text = item1.Label;
-                }
-                catch { }
 
             }
         }

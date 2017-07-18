@@ -7,7 +7,7 @@
 
   有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
  -->
-  <Identity Name="51420AmateurZhang.InsTsinghua" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.4.0" ProcessorArchitecture="x64" />
+  <Identity Name="51420AmateurZhang.InsTsinghua" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.7.0" ProcessorArchitecture="x64" />
   <mp:PhoneIdentity PhoneProductId="39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>InsTsinghua</DisplayName>
@@ -60,7 +60,7 @@
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="14.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2015" />
-    <build:Item Name="OperatingSystem" Version="10.0.14393.0 (rs1_release.160715-1616)" />
+    <build:Item Name="OperatingSystem" Version="10.0.15063.0 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="14.0.25431.1" />
     <build:Item Name="ProjectGUID" Value="{ED32C39B-E970-4543-8D78-8048C1700D64}" />
     <build:Item Name="ilc.exe" Version="1.4.24208.01 built by: PROJECTNGDR2" />

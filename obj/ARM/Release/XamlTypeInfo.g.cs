@@ -132,7 +132,7 @@ namespace InsTsinghua.InsTsinghua_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[22];
+            _typeNameTable = new string[23];
             _typeNameTable[0] = "InsTsinghua.Courses.ContentDialogAnc";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.ContentDialog";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.ContentControl";
@@ -150,13 +150,14 @@ namespace InsTsinghua.InsTsinghua_XamlTypeInfo
             _typeNameTable[14] = "InsTsinghua.Logins.PasswordDialog";
             _typeNameTable[15] = "InsTsinghua.Mails.Email";
             _typeNameTable[16] = "InsTsinghua.MainPage";
-            _typeNameTable[17] = "InsTsinghua.Newss.News";
-            _typeNameTable[18] = "InsTsinghua.TsinghuaTVs.MyUserControlTV1";
-            _typeNameTable[19] = "InsTsinghua.TsinghuaTVs.TV1";
-            _typeNameTable[20] = "InsTsinghua.TsinghuaTVs.TsinghuaTV";
-            _typeNameTable[21] = "InsTsinghua.Welcomes.Startspage";
+            _typeNameTable[17] = "Windows.UI.Xaml.Controls.Frame";
+            _typeNameTable[18] = "InsTsinghua.Newss.News";
+            _typeNameTable[19] = "InsTsinghua.TsinghuaTVs.MyUserControlTV1";
+            _typeNameTable[20] = "InsTsinghua.TsinghuaTVs.TV1";
+            _typeNameTable[21] = "InsTsinghua.TsinghuaTVs.TsinghuaTV";
+            _typeNameTable[22] = "InsTsinghua.Welcomes.Startspage";
 
-            _typeTable = new global::System.Type[22];
+            _typeTable = new global::System.Type[23];
             _typeTable[0] = typeof(global::InsTsinghua.Courses.ContentDialogAnc);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.ContentDialog);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
@@ -174,11 +175,12 @@ namespace InsTsinghua.InsTsinghua_XamlTypeInfo
             _typeTable[14] = typeof(global::InsTsinghua.Logins.PasswordDialog);
             _typeTable[15] = typeof(global::InsTsinghua.Mails.Email);
             _typeTable[16] = typeof(global::InsTsinghua.MainPage);
-            _typeTable[17] = typeof(global::InsTsinghua.Newss.News);
-            _typeTable[18] = typeof(global::InsTsinghua.TsinghuaTVs.MyUserControlTV1);
-            _typeTable[19] = typeof(global::InsTsinghua.TsinghuaTVs.TV1);
-            _typeTable[20] = typeof(global::InsTsinghua.TsinghuaTVs.TsinghuaTV);
-            _typeTable[21] = typeof(global::InsTsinghua.Welcomes.Startspage);
+            _typeTable[17] = typeof(global::Windows.UI.Xaml.Controls.Frame);
+            _typeTable[18] = typeof(global::InsTsinghua.Newss.News);
+            _typeTable[19] = typeof(global::InsTsinghua.TsinghuaTVs.MyUserControlTV1);
+            _typeTable[20] = typeof(global::InsTsinghua.TsinghuaTVs.TV1);
+            _typeTable[21] = typeof(global::InsTsinghua.TsinghuaTVs.TsinghuaTV);
+            _typeTable[22] = typeof(global::InsTsinghua.Welcomes.Startspage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -224,11 +226,11 @@ namespace InsTsinghua.InsTsinghua_XamlTypeInfo
         private object Activate_14_PasswordDialog() { return new global::InsTsinghua.Logins.PasswordDialog(); }
         private object Activate_15_Email() { return new global::InsTsinghua.Mails.Email(); }
         private object Activate_16_MainPage() { return new global::InsTsinghua.MainPage(); }
-        private object Activate_17_News() { return new global::InsTsinghua.Newss.News(); }
-        private object Activate_18_MyUserControlTV1() { return new global::InsTsinghua.TsinghuaTVs.MyUserControlTV1(); }
-        private object Activate_19_TV1() { return new global::InsTsinghua.TsinghuaTVs.TV1(); }
-        private object Activate_20_TsinghuaTV() { return new global::InsTsinghua.TsinghuaTVs.TsinghuaTV(); }
-        private object Activate_21_Startspage() { return new global::InsTsinghua.Welcomes.Startspage(); }
+        private object Activate_18_News() { return new global::InsTsinghua.Newss.News(); }
+        private object Activate_19_MyUserControlTV1() { return new global::InsTsinghua.TsinghuaTVs.MyUserControlTV1(); }
+        private object Activate_20_TV1() { return new global::InsTsinghua.TsinghuaTVs.TV1(); }
+        private object Activate_21_TsinghuaTV() { return new global::InsTsinghua.TsinghuaTVs.TsinghuaTV(); }
+        private object Activate_22_Startspage() { return new global::InsTsinghua.Welcomes.Startspage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -339,42 +341,47 @@ namespace InsTsinghua.InsTsinghua_XamlTypeInfo
             case 16:   //  InsTsinghua.MainPage
                 userType = new global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_16_MainPage;
+                userType.AddMemberName("AppFrame");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 17:   //  InsTsinghua.Newss.News
+            case 17:   //  Windows.UI.Xaml.Controls.Frame
+                xamlType = new global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 18:   //  InsTsinghua.Newss.News
                 userType = new global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_News;
+                userType.Activator = Activate_18_News;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  InsTsinghua.TsinghuaTVs.MyUserControlTV1
+            case 19:   //  InsTsinghua.TsinghuaTVs.MyUserControlTV1
                 userType = new global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_18_MyUserControlTV1;
+                userType.Activator = Activate_19_MyUserControlTV1;
                 userType.AddMemberName("mytv");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  InsTsinghua.TsinghuaTVs.TV1
+            case 20:   //  InsTsinghua.TsinghuaTVs.TV1
                 userType = new global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 20:   //  InsTsinghua.TsinghuaTVs.TsinghuaTV
+            case 21:   //  InsTsinghua.TsinghuaTVs.TsinghuaTV
                 userType = new global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_TsinghuaTV;
+                userType.Activator = Activate_21_TsinghuaTV;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  InsTsinghua.Welcomes.Startspage
+            case 22:   //  InsTsinghua.Welcomes.Startspage
                 userType = new global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_Startspage;
+                userType.Activator = Activate_22_Startspage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -398,7 +405,12 @@ namespace InsTsinghua.InsTsinghua_XamlTypeInfo
             var that = (global::InsTsinghua.Courses.MyUserControlHomework)instance;
             return that.myddl;
         }
-        private object get_3_MyUserControlTV1_mytv(object instance)
+        private object get_3_MainPage_AppFrame(object instance)
+        {
+            var that = (global::InsTsinghua.MainPage)instance;
+            return that.AppFrame;
+        }
+        private object get_4_MyUserControlTV1_mytv(object instance)
         {
             var that = (global::InsTsinghua.TsinghuaTVs.MyUserControlTV1)instance;
             return that.mytv;
@@ -429,10 +441,16 @@ namespace InsTsinghua.InsTsinghua_XamlTypeInfo
                 xamlMember.Getter = get_2_MyUserControlHomework_myddl;
                 xamlMember.SetIsReadOnly();
                 break;
+            case "InsTsinghua.MainPage.AppFrame":
+                userType = (global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlUserType)GetXamlTypeByName("InsTsinghua.MainPage");
+                xamlMember = new global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlMember(this, "AppFrame", "Windows.UI.Xaml.Controls.Frame");
+                xamlMember.Getter = get_3_MainPage_AppFrame;
+                xamlMember.SetIsReadOnly();
+                break;
             case "InsTsinghua.TsinghuaTVs.MyUserControlTV1.mytv":
                 userType = (global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlUserType)GetXamlTypeByName("InsTsinghua.TsinghuaTVs.MyUserControlTV1");
                 xamlMember = new global::InsTsinghua.InsTsinghua_XamlTypeInfo.XamlMember(this, "mytv", "InsTsinghua.TsinghuaTVs.TV1");
-                xamlMember.Getter = get_3_MyUserControlTV1_mytv;
+                xamlMember.Getter = get_4_MyUserControlTV1_mytv;
                 xamlMember.SetIsReadOnly();
                 break;
             }

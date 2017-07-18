@@ -63,7 +63,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <!---->
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup>
@@ -130,7 +130,7 @@
 
         </RelativePanel>
 
-     <!--  <SplitView Grid.Row="1" 
+        <!--  <SplitView Grid.Row="1" 
                    Name="MySplitView"
                    DisplayMode="CompactOverlay"
                    OpenPaneLength="200"
@@ -240,8 +240,8 @@
             </SplitView.Content>
         </SplitView>
 -->
-        
-        
+
+
         <SplitView x:ConnectionId='6' Name="RootSplitView" 
                    DisplayMode="CompactOverlay" 
                    CompactPaneLength="48" OpenPaneLength="180" 
@@ -280,6 +280,6 @@
 
     </Grid>
 
-  
+
 </Page>
 

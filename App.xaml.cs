@@ -96,7 +96,7 @@ namespace InsTsinghua
 
 
                 Windows.UI.Core.SystemNavigationManager.GetForCurrentView().BackRequested += BackRequested;
-            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+            Windows.UI.Core.SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Collapsed;
         }
         private void OnNavigated(object sender, NavigationEventArgs e)
         {

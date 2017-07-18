@@ -315,6 +315,7 @@
       <RootProperty Name="OffContent" />
       <RootProperty Name="IsOn" />
       <RootProperty Name="Width" />
+      <RootEvent Name="Toggled" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.MediaElement">
       <RootProperty Name="Name" />

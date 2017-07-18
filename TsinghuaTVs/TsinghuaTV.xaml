@@ -102,14 +102,14 @@
 
             </Grid.ColumnDefinitions>
 
-            <ToggleSwitch  VerticalAlignment="Center" Margin="10,0,0,0" Name="InOut" Grid.Column="0" OnContent="校内" OffContent="校外" IsOn="True" Width="116" ></ToggleSwitch>
+            <ToggleSwitch  VerticalAlignment="Center" Margin="10,0,0,0" Name="InOut" Grid.Column="0" OnContent="校内" OffContent="校外" IsOn="True" Width="116" Toggled="InOut_Toggled"></ToggleSwitch>
             <Button Content="Tips/提示" Grid.Column="1" HorizontalAlignment="Right" Background="MediumPurple" Margin="10,0,10,0">
                 <Button.Flyout>
                     <Flyout Placement="Top">
                         <Grid>
                             <TextBlock TextWrapping="Wrap" Margin="2"> 校内连接Tsinghua WiFi时选择校内模式,不走流量；<LineBreak/>
-                                校外或者连接其他网络时请选择校外模式。<LineBreak/>
-                                校外网络需要 IPV6 支持。
+                                校外或者连接其他网络时请选择校外模式；<LineBreak/>
+                                校外网络比较缓慢，请耐心等待。
                             </TextBlock>
                         </Grid>
                     </Flyout>
