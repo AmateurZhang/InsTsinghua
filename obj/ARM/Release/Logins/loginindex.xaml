@@ -97,6 +97,7 @@
 课程公告、作业会自动刷新，公告相关内容会显示在磁贴上。
 转到登录页可以手动刷新滚动磁贴，如需联网更新，请按下学堂页中刷新按钮。                                     
                     </TextBlock>
+                    <HyperlinkButton NavigateUri="https://amateurzhang.github.io/InsTsinghua/" Content="InsTsinghua隐私策略"> </HyperlinkButton>
                 </StackPanel>
             </ScrollViewer>
             <ScrollViewer Grid.Row="4" Grid.Column="1" >

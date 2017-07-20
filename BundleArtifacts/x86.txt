@@ -1,2 +1,2 @@
-MainPackage=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Release\InsTsinghua_1.1.7.0_x86.appx
-SymbolPackage=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\AppPackages\InsTsinghua_1.1.7.0_Test\InsTsinghua_1.1.7.0_x86.appxsym
+MainPackage=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\InsTsinghua\bin\x86\Release\InsTsinghua_1.1.8.0_x86.appx
+SymbolPackage=D:\我的文档\Programming\TsinghuaUWP\InsTsinghua\AppPackages\InsTsinghua_1.1.8.0_Test\InsTsinghua_1.1.8.0_x86.appxsym
