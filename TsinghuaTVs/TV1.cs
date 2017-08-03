@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace InsTsinghua.TsinghuaTVs
 {
+    
     public class TV1
     {
         public string URL { get; set; }
@@ -32,8 +33,9 @@ namespace InsTsinghua.TsinghuaTVs
             {
                 filteredNewsItems = allItems.Where(p => p.Category == category ).ToList();
             }
-          
-                newsItems.Clear();
+            try { newsItems.Clear(); }
+            catch { }
+               
         
            
             filteredNewsItems.ForEach(p => newsItems.Add(p));

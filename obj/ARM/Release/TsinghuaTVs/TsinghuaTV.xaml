@@ -58,7 +58,9 @@
             </Grid.ColumnDefinitions>
 
             <ScrollViewer x:ConnectionId='5' Grid.Column="0" Name="TVList">
-                <GridView x:ConnectionId='8' Name="TVGrid" 
+                <StackPanel>
+                    <TextBlock x:ConnectionId='8' Name="ConnectWarning" Margin="2" Visibility="Collapsed">正在连接到校园网，请稍后</TextBlock>
+                    <GridView x:ConnectionId='9' Name="TVGrid" 
                                                     
                           HorizontalAlignment="Left"
                       VerticalAlignment="Stretch"
@@ -70,7 +72,9 @@
                             <local:MyUserControlTV1/>
                         </DataTemplate>
                     </GridView.ItemTemplate>
-                </GridView>
+                    </GridView>
+                    
+                </StackPanel>
             </ScrollViewer>
 
 
@@ -108,8 +112,8 @@
                     <Flyout Placement="Top">
                         <Grid>
                             <TextBlock TextWrapping="Wrap" Margin="2"> 校内连接Tsinghua WiFi时选择校内模式,不走流量；<LineBreak/>
-                                校外或者连接其他网络时请选择校外模式；<LineBreak/>
-                                校外网络比较缓慢，请耐心等待。
+                                校外选择校内模式时,使用登录凭证访问校内资源；<LineBreak/>
+                                校外模式免登录，网速比较缓慢，请耐心等待。
                             </TextBlock>
                         </Grid>
                     </Flyout>

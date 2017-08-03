@@ -7,7 +7,7 @@
 
   有关程序包清单文件的详细信息，请参阅 http://go.microsoft.com/fwlink/?LinkID=241727
  -->
-  <Identity Name="51420AmateurZhang.InsTsinghua" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.7.0" ProcessorArchitecture="x86" />
+  <Identity Name="51420AmateurZhang.InsTsinghua" Publisher="CN=543FB66A-D2DB-4439-BA5C-63F953D4C46E" Version="1.1.8.0" ProcessorArchitecture="x86" />
   <mp:PhoneIdentity PhoneProductId="39dea5c9-ccfd-48ab-ba73-8bcbda11b7f4" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>InsTsinghua</DisplayName>
@@ -17,7 +17,7 @@
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10586.0" MaxVersionTested="10.0.14393.0" />
     <PackageDependency Name="Microsoft.NET.CoreRuntime.1.0" MinVersion="1.0.23819.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
-    <PackageDependency Name="Microsoft.VCLibs.140.00.Debug" MinVersion="14.0.24210.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
+    <PackageDependency Name="Microsoft.VCLibs.140.00.Debug" MinVersion="14.0.25023.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
   <Resources>
     <Resource Language="ZH-CN" />
